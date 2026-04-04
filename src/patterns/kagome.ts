@@ -9,7 +9,7 @@ function generate(params: PatternParams): string {
   const w = scale
   const h = scale * Math.sqrt(3) / 2
 
-  return `<path d="M0,${h} L${w / 2},0 L${w},${h} M0,0 L${w},0 L${w / 2},${h}" fill="none" stroke="${color1}" stroke-width="${strokeWidth}" opacity="${opacity}" />`
+  return `<path d="M0,${h} L${w / 2},0 L${w},${h} M0,0 L${w},0 L${w / 2},${h} M0,${h / 2} L${w},${h / 2}" fill="none" stroke="${color1}" stroke-width="${strokeWidth}" opacity="${opacity}" />`
 }
 
 export const kagome: PatternDefinition = {
