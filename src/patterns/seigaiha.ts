@@ -25,11 +25,13 @@ function generate(params: PatternParams): string {
 
   return [
     `<g opacity="${opacity}">`,
-    // Row 0: arcs centered at bottom-center of tile
+    // Row 0: arcs centered at bottom of tile
     makeArcs(r, r),
-    // Row 1 (offset): arcs centered at top-left and top-right corners
-    makeArcs(0, 0),
-    makeArcs(d, 0),
+    // Row 1 (offset): arcs centered at mid-height of tile, at left/right edges.
+    // This creates the classic overlapping wave effect — arcs from row 1
+    // overlap with row 0 in the upper half of the tile.
+    makeArcs(0, r / 2),
+    makeArcs(d, r / 2),
     `</g>`,
   ].join('')
 }
