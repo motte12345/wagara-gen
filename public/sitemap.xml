@@ -145,16 +145,44 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/karakusa</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/karakusa" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/karakusa" />
+    <loc>https://wagara-gen.pages.dev/en/sayagata</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/sayagata" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/sayagata" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/karakusa</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/karakusa" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/karakusa" />
+    <loc>https://wagara-gen.pages.dev/ja/sayagata</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/sayagata" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/sayagata" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/kagome</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kagome" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kagome" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/kagome</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kagome" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kagome" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/tatewaku</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/tatewaku" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/tatewaku" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/tatewaku</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/tatewaku" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/tatewaku" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

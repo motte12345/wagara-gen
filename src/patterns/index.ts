@@ -8,7 +8,9 @@ import { kikkou } from './kikkou.ts'
 import { yagasuri } from './yagasuri.ts'
 import { chidori } from './chidori.ts'
 import { koushi } from './koushi.ts'
-import { karakusa } from './karakusa.ts'
+import { sayagata } from './sayagata.ts'
+import { kagome } from './kagome.ts'
+import { tatewaku } from './tatewaku.ts'
 import { sakura } from './sakura.ts'
 import { nami } from './nami.ts'
 
@@ -25,7 +27,9 @@ export const PATTERN_LIST: readonly PatternDefinition[] = [
   yagasuri,
   chidori,
   koushi,
-  karakusa,
+  sayagata,
+  kagome,
+  tatewaku,
   sakura,
   nami,
 ]
