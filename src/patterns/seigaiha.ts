@@ -2,20 +2,20 @@ import type { PatternDefinition, PatternParams } from './types.ts'
 
 function generate(params: PatternParams): string {
   const { color1, color3, scale, strokeWidth, opacity } = params
-  const r = scale / 2
-  const h = r // tile height = half scale
+  // Seigaiha: concentric semicircles in a brick-like offset arrangement.
+  // Tile: width = scale (one unit diameter), height = scale/2 (one unit radius).
+  // Row 0 arcs at bottom-center, row 1 arcs at top corners (offset by half).
+  const d = scale          // diameter of one wave unit
+  const r = d / 2          // radius
   const rings = 4
   const accent = color3 ?? color1
 
-  // Seigaiha: concentric semicircular arcs in a wave pattern
-  // Tile size: scale x (scale/2), with two arc groups offset
-
-  const makeArcs = (cx: number, cy: number) => {
+  const makeArcs = (cx: number, cy: number): string => {
     const arcs: string[] = []
     for (let i = rings; i >= 1; i--) {
       const ri = (r * i) / rings
       const col = i === 2 ? accent : color1
-      // Draw only the top half of the circle using an arc path
+      // Upper semicircle arc: from (cx-ri, cy) to (cx+ri, cy) going through top
       arcs.push(
         `<path d="M ${cx - ri},${cy} A ${ri},${ri} 0 0,1 ${cx + ri},${cy}" fill="none" stroke="${col}" stroke-width="${strokeWidth}" />`
       )
@@ -25,11 +25,11 @@ function generate(params: PatternParams): string {
 
   return [
     `<g opacity="${opacity}">`,
-    // Main arc group at center-bottom of tile
-    makeArcs(r, h),
-    // Offset arc group — shifted right by r, up by h (wraps via pattern tiling)
+    // Row 0: arcs centered at bottom-center of tile
+    makeArcs(r, r),
+    // Row 1 (offset): arcs centered at top-left and top-right corners
     makeArcs(0, 0),
-    makeArcs(scale, 0),
+    makeArcs(d, 0),
     `</g>`,
   ].join('')
 }

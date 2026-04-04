@@ -2,41 +2,45 @@ import type { PatternDefinition, PatternParams } from './types.ts'
 
 function generate(params: PatternParams): string {
   const { color1, scale, strokeWidth, opacity } = params
+
+  // Sayagata (紗綾形): interlocking manji (卍) pattern forming a continuous maze.
+  // The pattern consists of connected right-angle hooks.
+  // Tile: scale × scale (square), divided into a 4×4 sub-grid.
+
   const s = scale
-  const q = s / 4
+  const u = s / 4  // sub-grid unit
 
-  // Sayagata: interlocking manji (卍) pattern
-  // Built from connected right-angle lines forming a continuous maze-like design.
-  // The tile is a square containing one complete sayagata unit.
+  // The sayagata is built from a specific arrangement of line segments
+  // within a square tile. Two manji units interlock.
 
-  const paths = [
-    // Left manji unit
+  // Path as a single continuous polyline-like structure
+  const segments = [
+    // Upper-left manji (卍)
     // Horizontal bar
-    `M 0,${q} L ${q * 2},${q}`,
-    `M ${q},0 L ${q},${q * 2}`,
-    // Hook top-right
-    `M ${q * 2},${q} L ${q * 2},0`,
-    // Hook bottom-left
-    `M ${q},${q * 2} L 0,${q * 2}`,
+    [0, u, u * 2, u],
+    // Vertical bar
+    [u, 0, u, u * 2],
+    // Right hook (goes up from end of horizontal)
+    [u * 2, u, u * 2, 0],
+    // Bottom hook (goes left from end of vertical)
+    [u, u * 2, 0, u * 2],
 
-    // Right manji unit (offset)
-    `M ${q * 2},${q * 3} L ${s},${q * 3}`,
-    `M ${q * 3},${q * 2} L ${q * 3},${s}`,
-    // Hook top-right
-    `M ${s},${q * 3} L ${s},${q * 2}`,
-    // Hook bottom-left
-    `M ${q * 3},${s} L ${q * 2},${s}`,
+    // Lower-right manji (卍, rotated 180°)
+    [u * 2, u * 3, u * 4, u * 3],
+    [u * 3, u * 2, u * 3, u * 4],
+    [u * 4, u * 3, u * 4, u * 2],
+    [u * 3, u * 4, u * 2, u * 4],
 
-    // Connecting segments between the two units
-    `M ${q * 2},0 L ${q * 2},${q}`,
-    `M 0,${q * 2} L ${q},${q * 2}`,
-    `M ${q * 2},${q * 2} L ${q * 2},${q * 3}`,
-    `M ${q * 2},${q * 2} L ${q * 3},${q * 2}`,
-    `M ${s},${q * 2} L ${s},${q * 3}`,
-    `M ${q * 2},${s} L ${q * 3},${s}`,
+    // Connecting segments between the two manji
+    [u * 2, u * 2, u * 2, u * 3],
+    [u * 2, u * 2, u * 3, u * 2],
   ]
 
-  return `<g stroke="${color1}" stroke-width="${strokeWidth}" opacity="${opacity}" fill="none" stroke-linecap="square">${paths.map(d => `<path d="${d}" />`).join('')}</g>`
+  const lineEls = segments.map(
+    ([x1, y1, x2, y2]) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" />`
+  ).join('')
+
+  return `<g stroke="${color1}" stroke-width="${strokeWidth}" opacity="${opacity}" fill="none" stroke-linecap="round">${lineEls}</g>`
 }
 
 export const sayagata: PatternDefinition = {

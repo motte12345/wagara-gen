@@ -3,64 +3,68 @@ import type { PatternDefinition, PatternParams } from './types.ts'
 function generate(params: PatternParams): string {
   const { color1, scale, strokeWidth, opacity } = params
 
-  // Asanoha (hemp leaf): based on regular hexagons.
-  // Each hexagon has lines from center to all 6 vertices,
-  // plus lines from center to the midpoint of each edge.
-  // This creates 6 diamond/rhombus shapes inside each hexagon.
+  // Asanoha (hemp leaf): hexagonal star pattern.
+  // Each hexagon contains lines from center to all 6 vertices AND
+  // from center to all 6 edge midpoints, creating 6 diamond shapes.
   //
-  // Tile: a rectangle containing two half-hexagons that tile seamlessly.
-  // Width = scale, Height = scale * sqrt(3)
-  // The tile contains one full hexagon unit (top half + bottom half offset).
+  // Uses pointy-top hexagons.
+  // Circumradius R = scale/2 (center to vertex distance).
+  // Tile: width = R*√3, height = R*3.
+  // Hex centers: A at (w/2, R), B at (0, 2.5R), B' at (w, 2.5R).
 
-  const w = scale
-  const h = scale * Math.sqrt(3)
-  const hw = w / 2
-  const hh = h / 2
-  const qh = h / 4
+  const R = scale / 2
+  const w = R * Math.sqrt(3)
+  const h = R * 3
 
-  // Hexagon vertices (centered at hw, hh):
-  //   top: (hw, 0)
-  //   top-right: (w, qh)
-  //   bottom-right: (w, qh*3)
-  //   bottom: (hw, h)
-  //   bottom-left: (0, qh*3)
-  //   top-left: (0, qh)
+  // Compute pointy-top hex vertices relative to center
+  const hexVerts = (cx: number, cy: number): [number, number][] => {
+    const verts: [number, number][] = []
+    for (let i = 0; i < 6; i++) {
+      const angle = -Math.PI / 2 + i * Math.PI / 3
+      verts.push([cx + R * Math.cos(angle), cy + R * Math.sin(angle)])
+    }
+    return verts
+  }
 
   const lines: string[] = []
 
-  // --- Upper hexagon center at (hw, qh*2) = (hw, hh) ---
-  const cx = hw
-  const cy = hh
+  // Draw all hex structures from multiple centers (including ghost hexes for tiling)
+  const centers: [number, number][] = [
+    [w / 2, R],           // Hex A (primary)
+    [0, 2.5 * R],         // Hex B (bottom-left)
+    [w, 2.5 * R],         // Hex B' (bottom-right)
+    // Ghost hexes for seamless edge coverage
+    [-w / 2, R],
+    [w + w / 2, R],
+    [w / 2, R - h],
+    [0, 2.5 * R - h],
+    [w, 2.5 * R - h],
+    [w / 2, R + h],
+    [0, 2.5 * R + h],
+    [w, 2.5 * R + h],
+  ]
 
-  // 6 vertices of the hexagon
-  const verts = [
-    [hw, 0],       // top
-    [w, qh],       // top-right
-    [w, qh * 3],   // bottom-right
-    [hw, h],       // bottom
-    [0, qh * 3],   // bottom-left
-    [0, qh],       // top-left
-  ] as const
+  for (const [cx, cy] of centers) {
+    const verts = hexVerts(cx, cy)
 
-  // Lines from center to each vertex
-  for (const [vx, vy] of verts) {
-    lines.push(`<line x1="${cx}" y1="${cy}" x2="${vx}" y2="${vy}" />`)
-  }
+    // Hex outline edges
+    for (let i = 0; i < 6; i++) {
+      const [x1, y1] = verts[i]
+      const [x2, y2] = verts[(i + 1) % 6]
+      lines.push(`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" />`)
+    }
 
-  // Lines from center to midpoint of each edge
-  for (let i = 0; i < 6; i++) {
-    const [x1, y1] = verts[i]
-    const [x2, y2] = verts[(i + 1) % 6]
-    const mx = (x1 + x2) / 2
-    const my = (y1 + y2) / 2
-    lines.push(`<line x1="${cx}" y1="${cy}" x2="${mx}" y2="${my}" />`)
-  }
+    // Center to each vertex
+    for (const [vx, vy] of verts) {
+      lines.push(`<line x1="${cx}" y1="${cy}" x2="${vx}" y2="${vy}" />`)
+    }
 
-  // Hexagon outline edges
-  for (let i = 0; i < 6; i++) {
-    const [x1, y1] = verts[i]
-    const [x2, y2] = verts[(i + 1) % 6]
-    lines.push(`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" />`)
+    // Center to midpoint of each edge
+    for (let i = 0; i < 6; i++) {
+      const [x1, y1] = verts[i]
+      const [x2, y2] = verts[(i + 1) % 6]
+      lines.push(`<line x1="${cx}" y1="${cy}" x2="${(x1 + x2) / 2}" y2="${(y1 + y2) / 2}" />`)
+    }
   }
 
   return `<g stroke="${color1}" stroke-width="${strokeWidth}" opacity="${opacity}" fill="none">${lines.join('')}</g>`
@@ -78,5 +82,6 @@ export const asanoha: PatternDefinition = {
     opacity: 1,
   },
   hasAccentColor: false,
-  tileHeight: (scale) => scale * Math.sqrt(3),
+  tileWidth: (scale) => (scale / 2) * Math.sqrt(3),
+  tileHeight: (scale) => (scale / 2) * 3,
 }
