@@ -25,7 +25,7 @@
 - [x] 波（Nami）SVG生成
 - [x] SVG → PNG 変換
 - [x] CSS コード生成
-- [x] ユニットテス��（98テスト全通過）
+- [x] ユニットテスト（98テスト全通過）
 
 ### Step 3: パターンエディターUI
 - [x] カスタマイズフォーム（色×3、スケール、線幅、回転、透明度）
@@ -48,6 +48,39 @@
 - [x] GitHub → Cloudflare Pages デプロイ（https://wagara-gen.pages.dev）
 
 ## Phase 2
-- [ ] 追加紋様 8種
-- [ ] ギャラリーページ
-- [ ] color-conv連携
+
+### Step 1: 追加紋様 8種
+- [x] 分銅繋ぎ（Fundou）
+- [x] 工字繋ぎ（Kouji）
+- [x] 十字繋ぎ（Juuji）
+- [x] 松皮菱（Matsukawa）
+- [x] 菱青海波（Hishiseigaiha）
+- [x] 千鳥繋ぎ（Chidoritsunagi）
+- [x] 縄目縞（Nawame）
+- [x] 風車（Kazaguruma）
+
+### Step 2: 既存パターン改修
+- [x] 籠目（Kagome）— 対角線+水平線方式に書き直し
+- [x] 紗綾形（Sayagata）— Illustratorベースのfillパターンに変更
+- [x] 矢絣（Yagasuri）— fillシェブロン方式に変更
+- [x] 千鳥（Chidori）— ハウンドトゥースfillパターンに変更
+- [x] 麻の葉（Asanoha）— fill三角形の組み合わせに変更
+- [x] 青海波（Seigaiha）— fill同心弧方式に変更
+
+### Step 3: 品質改善（レビュー指摘対応）
+- [x] fill系パターンの二重背景rect削除（13パターン）
+- [x] usesStrokeフラグ追加 — strokeWidth無効パターンでスライダー非表示
+- [x] useEffect依存配列修正（useEditorParams）
+- [x] PNGエクスポート失敗時のUIエラー表示
+- [x] URL.revokeObjectURLタイミング改善（100ms→1000ms）
+- [x] SITE_URLを定数ファイルに集約
+- [x] 不正な:langパラメータのリダイレクト
+- [x] CSP img-srcをドメイン限定
+- [x] HomePageギャラリーSVGのモジュールレベル事前計算
+- [x] 翻訳キー整合性テスト + ルート衝突防止テスト
+- [x] 日本語i18nの文字化け修正（10箇所）
+
+## Phase 3（未着手）
+- [ ] ギャラリーページ（フィルター・検索）
+- [ ] color-conv連携（和色辞典）
+- [ ] sitemap.xml更新（22パターン × 2言語）
