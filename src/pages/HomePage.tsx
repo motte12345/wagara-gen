@@ -4,8 +4,12 @@ import { PageHead } from '../components/PageHead.tsx'
 import { JsonLd } from '../components/JsonLd.tsx'
 import { PATTERN_LIST } from '../patterns/index.ts'
 import { getTileDimensions } from '../patterns/types.ts'
+import { SITE_URL } from '../constants.ts'
 
-const SITE_URL = 'https://wagara-gen.pages.dev'
+// Pre-compute default SVG for each pattern (stable across renders)
+const DEFAULT_SVG_MAP = new Map(
+  PATTERN_LIST.map((p) => [p.id, p.generate(p.defaultParams)]),
+)
 
 export function HomePage() {
   const t = useT()
@@ -61,7 +65,7 @@ export function HomePage() {
                     >
                       <g
                         dangerouslySetInnerHTML={{
-                          __html: pattern.generate(pattern.defaultParams),
+                          __html: DEFAULT_SVG_MAP.get(pattern.id) ?? '',
                         }}
                       />
                     </pattern>

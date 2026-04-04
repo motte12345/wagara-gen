@@ -1,6 +1,8 @@
 import { describe, it, expect } from 'vitest'
 import { PATTERN_LIST, getPattern } from './index.ts'
 import type { PatternParams } from './types.ts'
+import { en } from '../i18n/en.ts'
+import { ja } from '../i18n/ja.ts'
 
 const defaultTestParams: PatternParams = {
   color1: '#333333',
@@ -19,6 +21,27 @@ describe('Pattern registry', () => {
   it('has unique IDs', () => {
     const ids = PATTERN_LIST.map((p) => p.id)
     expect(new Set(ids).size).toBe(ids.length)
+  })
+
+  it('pattern IDs do not conflict with reserved routes', () => {
+    const reserved = ['about']
+    for (const pattern of PATTERN_LIST) {
+      expect(reserved).not.toContain(pattern.id)
+    }
+  })
+
+  it('all patterns have EN translations', () => {
+    for (const pattern of PATTERN_LIST) {
+      expect(en.patterns[pattern.id], `Missing EN translation for ${pattern.id}`).toBeDefined()
+      expect(en.patterns[pattern.id].name).toBeTruthy()
+    }
+  })
+
+  it('all patterns have JA translations', () => {
+    for (const pattern of PATTERN_LIST) {
+      expect(ja.patterns[pattern.id], `Missing JA translation for ${pattern.id}`).toBeDefined()
+      expect(ja.patterns[pattern.id].name).toBeTruthy()
+    }
   })
 
   it('getPattern returns undefined for unknown ID', () => {

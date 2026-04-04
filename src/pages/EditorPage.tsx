@@ -9,8 +9,7 @@ import { CultureSection } from '../components/CultureSection.tsx'
 import { JsonLd } from '../components/JsonLd.tsx'
 import { getPattern } from '../patterns/index.ts'
 import { useEditorParams } from '../hooks/useEditorParams.ts'
-
-const SITE_URL = 'https://wagara-gen.pages.dev'
+import { SITE_URL } from '../constants.ts'
 
 export function EditorPage() {
   const { pattern: patternId } = useParams<{ pattern: string }>()

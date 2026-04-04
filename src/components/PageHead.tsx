@@ -1,13 +1,12 @@
 import { Helmet } from 'react-helmet-async'
 import { useLang } from '../i18n/index.ts'
+import { SITE_URL } from '../constants.ts'
 
 interface PageHeadProps {
   readonly title: string
   readonly description: string
   readonly path: string
 }
-
-const SITE_URL = 'https://wagara-gen.pages.dev'
 
 export function PageHead({ title, description, path }: PageHeadProps) {
   const lang = useLang()
