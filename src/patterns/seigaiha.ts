@@ -1,72 +1,54 @@
 import type { PatternDefinition, PatternParams } from './types.ts'
 
+// Seigaiha (青海波): concentric arc waves
+// Base tile: 120×60, with arcs extending beyond for seamless tiling
+const PATH_D = [
+  // Center wave (full 4 arcs)
+  'M13.005 31.426a55 55 0 0 1 93.99 0 60 60 0 0 0-9.89 3.114 45 45 0 0 0-74.21 0 60 60 0 0 0-9.89-3.114z',
+  'm14.499 5.249a40 40 0 0 1 64.992 0 60 60 0 0 0-8.496 5.325 30 30 0 0 0-48 0 60 60 0 0 0-8.496-5.325z',
+  'm12.371 8.493a25 25 0 0 1 40.25 0 60 60 0 0 0-7.063 7.458 15 15 0 0 0-26.124 0 60 60 0 0 0-7.063-7.458z',
+  'm10.477 12.202a10 10 0 0 1 19.296 0 60 60 0 0 0-1.897 3.133 60 60 0 0 0-15.502 0 60 60 0 0 0-1.897-3.133z',
+  // Bottom-left wave (2 arcs)
+  'M-46.995 61.426a55 55 0 0 1 93.99 0 60 60 0 0 0-9.89 3.114 45 45 0 0 0-74.21 0 60 60 0 0 0-9.89-3.114z',
+  'm14.499 5.249a40 40 0 0 1 64.992 0 60 60 0 0 0-8.496 5.325 30 30 0 0 0-48 0 60 60 0 0 0-8.496-5.325z',
+  // Bottom-right wave (2 arcs)
+  'M73.005 61.426a55 55 0 0 1 93.99 0 60 60 0 0 0-9.89 3.114 45 45 0 0 0-74.21 0 60 60 0 0 0-9.89-3.114z',
+  'm14.499 5.249a40 40 0 0 1 64.992 0 60 60 0 0 0-8.496 5.325 30 30 0 0 0-48 0 60 60 0 0 0-8.496-5.325z',
+  // Top-left wave (full 4 arcs)
+  'M-46.995 1.426a55 55 0 0 1 93.99 0 60 60 0 0 0-9.89 3.114 45 45 0 0 0-74.21 0 60 60 0 0 0-9.89-3.114z',
+  'm14.499 5.249a40 40 0 0 1 64.992 0 60 60 0 0 0-8.496 5.325 30 30 0 0 0-48 0 60 60 0 0 0-8.496-5.325z',
+  'm12.371 8.493a25 25 0 0 1 40.25 0 60 60 0 0 0-7.063 7.458 15 15 0 0 0-26.124 0 60 60 0 0 0-7.063-7.458z',
+  'm10.477 12.202a10 10 0 0 1 19.296 0 60 60 0 0 0-1.897 3.133 60 60 0 0 0-15.502 0 60 60 0 0 0-1.897-3.133z',
+  // Top-right wave (full 4 arcs)
+  'M73.005 1.426a55 55 0 0 1 93.99 0 60 60 0 0 0-9.89 3.114 45 45 0 0 0-74.21 0 60 60 0 0 0-9.89-3.114z',
+  'm14.499 5.249a40 40 0 0 1 64.992 0 60 60 0 0 0-8.496 5.325 30 30 0 0 0-48 0 60 60 0 0 0-8.496-5.325z',
+  'm12.371 8.493a25 25 0 0 1 40.25 0 60 60 0 0 0-7.063 7.458 15 15 0 0 0-26.124 0 60 60 0 0 0-7.063-7.458z',
+  'm10.477 12.202a10 10 0 0 1 19.296 0 60 60 0 0 0-1.897 3.133 60 60 0 0 0-15.502 0 60 60 0 0 0-1.897-3.133z',
+  // Top-center small arc
+  'M50.352-2.630a10 10 0 0 1 19.296 0 60 60 0 0 0-1.897 3.133 60 60 0 0 0-15.502 0 60 60 0 0 0-1.897-3.133z',
+].join('')
+
 function generate(params: PatternParams): string {
-  const { color1, color2, color3, scale, strokeWidth, opacity } = params
-  // Seigaiha: concentric semicircular arcs in overlapping rows.
-  //
-  // Reference: Shifty = (r, 0.75r) — each row shifts right by r, down by 0.75r.
-  // This means the front row's dome extends 0.25r past the back row's center,
-  // creating the characteristic overlap where dome edges peek out from behind.
-  //
-  // Rectangular tile: width = d = scale, height = 1.5r = 0.75*scale.
-  // Row positions (SVG y-down, front row at bottom, back row at top):
-  //   Back row:  y = 0.25r  (drawn first, behind)
-  //   Front row: y = r      (drawn last, on top)
-  //   Ghost back row: y = 1.75r (fills gap at tile bottom)
+  const { color1, color2, scale, opacity } = params
 
-  const d = scale
-  const r = d / 2
-  const rings = 4
-  const accent = color3 ?? color1
+  // Tile: 120×60, scaled via transform
+  const s = scale / 120
 
-  const makeWaveUnit = (cx: number, cy: number): string => {
-    const parts: string[] = []
-
-    // Opaque filled semicircle (dome shape) — masks arcs behind
-    parts.push(
-      `<path d="M ${cx - r},${cy} A ${r},${r} 0 0,1 ${cx + r},${cy} Z" fill="${color2}" />`
-    )
-
-    // Concentric arc strokes
-    for (let i = rings; i >= 1; i--) {
-      const ri = (r * i) / rings
-      const col = i === 2 ? accent : color1
-      parts.push(
-        `<path d="M ${cx - ri},${cy} A ${ri},${ri} 0 0,1 ${cx + ri},${cy}" fill="none" stroke="${col}" stroke-width="${strokeWidth}" />`
-      )
-    }
-
-    return parts.join('')
-  }
-
-  return [
-    `<g opacity="${opacity}">`,
-    // 1. Ghost back row at bottom (fills tile bottom gap)
-    makeWaveUnit(0, r * 1.75),
-    makeWaveUnit(d, r * 1.75),
-    // 2. Back row (behind, near top of tile)
-    makeWaveUnit(0, r * 0.25),
-    makeWaveUnit(d, r * 0.25),
-    // 3. Ghost front row at top (from tile above)
-    makeWaveUnit(r, -r * 0.5),
-    // 4. Front row (on top, near bottom of tile)
-    makeWaveUnit(r, r),
-    `</g>`,
-  ].join('')
+  return `<g transform="scale(${s})" opacity="${opacity}"><rect width="120" height="60" fill="${color2}" /><path d="${PATH_D}" fill="${color1}" /></g>`
 }
 
 export const seigaiha: PatternDefinition = {
   id: 'seigaiha',
   generate,
   defaultParams: {
-    color1: '#2b5797',
-    color2: '#f5f0e8',
-    color3: '#4a90d9',
-    scale: 60,
-    strokeWidth: 3,
+    color1: '#808080',
+    color2: '#cccccc',
+    scale: 120,
+    strokeWidth: 1,
     rotation: 0,
     opacity: 1,
   },
-  hasAccentColor: true,
-  tileHeight: (scale) => scale * 0.75,
+  hasAccentColor: false,
+  tileWidth: (scale) => scale,
+  tileHeight: (scale) => scale / 2,
 }
