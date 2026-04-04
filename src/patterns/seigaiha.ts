@@ -4,16 +4,15 @@ function generate(params: PatternParams): string {
   const { color1, color2, color3, scale, strokeWidth, opacity } = params
   // Seigaiha: concentric semicircular arcs in overlapping rows.
   //
-  // Based on the parallelogram tiling approach:
-  //   Shiftx = (d, 0)       — horizontal period = diameter
-  //   Shifty = (r, r)       — each row shifts right by r AND down by r
+  // Reference: Shifty = (r, 0.75r) — each row shifts right by r, down by 0.75r.
+  // This means the front row's dome extends 0.25r past the back row's center,
+  // creating the characteristic overlap where dome edges peek out from behind.
   //
-  // Rectangular tile: width = d = scale, height = 2r = scale.
-  // Contains two rows:
-  //   Back row  (drawn first): centers at (0, r/2) and (d, r/2)
-  //   Front row (drawn second): center at (r, 3r/2)
-  //
-  // Each dome has a filled semicircle (background) to mask the row behind it.
+  // Rectangular tile: width = d = scale, height = 1.5r = 0.75*scale.
+  // Row positions (SVG y-down, front row at bottom, back row at top):
+  //   Back row:  y = 0.25r  (drawn first, behind)
+  //   Front row: y = r      (drawn last, on top)
+  //   Ghost back row: y = 1.75r (fills gap at tile bottom)
 
   const d = scale
   const r = d / 2
@@ -23,7 +22,7 @@ function generate(params: PatternParams): string {
   const makeWaveUnit = (cx: number, cy: number): string => {
     const parts: string[] = []
 
-    // Opaque filled semicircle — masks arcs behind this dome
+    // Opaque filled semicircle (dome shape) — masks arcs behind
     parts.push(
       `<path d="M ${cx - r},${cy} A ${r},${r} 0 0,1 ${cx + r},${cy} Z" fill="${color2}" />`
     )
@@ -42,16 +41,16 @@ function generate(params: PatternParams): string {
 
   return [
     `<g opacity="${opacity}">`,
-    // Ghost back row from below (fills gap at tile bottom, y=3r/2 to y=2r)
-    makeWaveUnit(0, r * 5 / 2),
-    makeWaveUnit(d, r * 5 / 2),
-    // Ghost front row from above (fills gap at tile top)
-    makeWaveUnit(r, -r / 2),
-    // Back row: at y = r/2, offset at tile edges
-    makeWaveUnit(0, r / 2),
-    makeWaveUnit(d, r / 2),
-    // Front row (on top): at y = 3r/2, centered
-    makeWaveUnit(r, r * 3 / 2),
+    // 1. Ghost back row at bottom (fills tile bottom gap)
+    makeWaveUnit(0, r * 1.75),
+    makeWaveUnit(d, r * 1.75),
+    // 2. Back row (behind, near top of tile)
+    makeWaveUnit(0, r * 0.25),
+    makeWaveUnit(d, r * 0.25),
+    // 3. Ghost front row at top (from tile above)
+    makeWaveUnit(r, -r * 0.5),
+    // 4. Front row (on top, near bottom of tile)
+    makeWaveUnit(r, r),
     `</g>`,
   ].join('')
 }
@@ -69,5 +68,5 @@ export const seigaiha: PatternDefinition = {
     opacity: 1,
   },
   hasAccentColor: true,
-  // tileHeight = scale (= 2r), same as width — no override needed
+  tileHeight: (scale) => scale * 0.75,
 }
