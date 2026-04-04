@@ -4,29 +4,26 @@ function generate(params: PatternParams): string {
   const { color1, scale, strokeWidth, opacity } = params
 
   // Kagome (basket weave): three sets of parallel lines at 0°, 60°, 120°
-  // forming hexagram (Star of David) shapes with hexagonal holes.
+  // forming hexagram stars with hexagonal holes.
   //
-  // Lines come in pairs — within each pair spacing is d, between pairs is 2d.
-  // This creates the hexagonal holes characteristic of kagome.
+  // Horizontal lines come in pairs (h/6 apart), with h/3 gaps between pairs.
+  // This alternating spacing is inherent to the trihexagonal tiling —
+  // it creates equal-sized regular hexagons and equilateral triangles
+  // (both with side length s/3).
   //
   // Tile: width = scale, height = scale * √3.
 
   const s = scale
   const h = s * Math.sqrt(3)
+  const hh = h / 2
 
-  // The kagome line spacing: pairs of lines separated by h/6,
-  // with h/3 gap between pairs. Period = h/6 + h/3 = h/2.
-  // 4 horizontal lines per tile at: h/6, h/3, h*2/3, h*5/6
-  // This gives uniform pair spacing.
   const lines: string[] = []
 
-  // Horizontal lines: uniform spacing h/4.
-  // This makes hex height = 2*(h/4) and triangle height = h/4,
-  // both giving side length a = s/2 for regular shapes.
-  lines.push(`<line x1="0" y1="0" x2="${s}" y2="0" />`)
-  lines.push(`<line x1="0" y1="${h / 4}" x2="${s}" y2="${h / 4}" />`)
-  lines.push(`<line x1="0" y1="${h / 2}" x2="${s}" y2="${h / 2}" />`)
-  lines.push(`<line x1="0" y1="${h * 3 / 4}" x2="${s}" y2="${h * 3 / 4}" />`)
+  // Horizontal lines in pairs
+  lines.push(`<line x1="0" y1="${hh / 3}" x2="${s}" y2="${hh / 3}" />`)
+  lines.push(`<line x1="0" y1="${hh * 2 / 3}" x2="${s}" y2="${hh * 2 / 3}" />`)
+  lines.push(`<line x1="0" y1="${hh + hh / 3}" x2="${s}" y2="${hh + hh / 3}" />`)
+  lines.push(`<line x1="0" y1="${hh + hh * 2 / 3}" x2="${s}" y2="${hh + hh * 2 / 3}" />`)
 
   // Lines at 60° (bottom-left to top-right)
   const dx60 = h / Math.tan(Math.PI / 3)
