@@ -3,13 +3,12 @@ import type { PatternDefinition, PatternParams } from './types.ts'
 function generate(params: PatternParams): string {
   const { color1, scale, strokeWidth, opacity } = params
 
-  // Kagome: two overlapping equilateral triangles (up + down)
-  // forming the characteristic six-pointed star pattern.
-  // Tile: width = scale, height = scale * sqrt(3) / 2
+  // Kagome: two diagonals + two horizontals in a 2:3 tile
+  // Reference: viewBox 160×240, lines at y=60 and y=180
   const w = scale
-  const h = scale * Math.sqrt(3) / 2
+  const h = scale * 1.5
 
-  return `<path d="M0,${h} L${w / 2},0 L${w},${h} M0,0 L${w},0 L${w / 2},${h} M0,${h / 2} L${w},${h / 2}" fill="none" stroke="${color1}" stroke-width="${strokeWidth}" opacity="${opacity}" />`
+  return `<path d="M0,0 L${w},${h} M0,${h} L${w},0 M0,${h / 4} L${w},${h / 4} M0,${h * 3 / 4} L${w},${h * 3 / 4}" fill="none" stroke="${color1}" stroke-width="${strokeWidth}" opacity="${opacity}" />`
 }
 
 export const kagome: PatternDefinition = {
@@ -25,5 +24,5 @@ export const kagome: PatternDefinition = {
   },
   hasAccentColor: false,
   tileWidth: (scale) => scale,
-  tileHeight: (scale) => scale * Math.sqrt(3) / 2,
+  tileHeight: (scale) => scale * 1.5,
 }
