@@ -3,40 +3,57 @@ import type { PatternDefinition, PatternParams } from './types.ts'
 function generate(params: PatternParams): string {
   const { color1, scale, strokeWidth, opacity } = params
 
-  // Kagome (basket weave): two overlapping equilateral triangle grids
-  // forming hexagram (Star of David) shapes, like bamboo basket weave.
-  //
-  // Constructed by drawing three sets of parallel lines at 0°, 60°, and 120°.
-  // Tile: width = scale, height = scale * √3.
-  // The triangles have side length = scale.
+  // Kagome (basket weave): hexagram (Star of David) lattice.
+  // Two overlapping equilateral triangles at each hexagonal lattice point.
+  // Uses the same pointy-top hex grid as asanoha/kikkou.
+  // Circumradius R = scale/2. Tile: width = R*√3, height = R*3.
 
-  const s = scale
-  const h = s * Math.sqrt(3)
-  const hh = h / 2
+  const R = scale / 2
+  const w = R * Math.sqrt(3)
 
-  const lines: string[] = []
+  const drawHexagram = (cx: number, cy: number): string => {
+    const parts: string[] = []
 
-  // Horizontal lines
-  lines.push(`<line x1="0" y1="${hh / 3}" x2="${s}" y2="${hh / 3}" />`)
-  lines.push(`<line x1="0" y1="${hh * 2 / 3}" x2="${s}" y2="${hh * 2 / 3}" />`)
-  lines.push(`<line x1="0" y1="${hh + hh / 3}" x2="${s}" y2="${hh + hh / 3}" />`)
-  lines.push(`<line x1="0" y1="${hh + hh * 2 / 3}" x2="${s}" y2="${hh + hh * 2 / 3}" />`)
+    // Upward triangle: vertices at -90°, 30°, 150°
+    const upAngles = [-Math.PI / 2, Math.PI / 6, Math.PI * 5 / 6]
+    const upVerts = upAngles.map((a) => [cx + R * Math.cos(a), cy + R * Math.sin(a)])
+    parts.push(
+      `<polygon points="${upVerts.map(([x, y]) => `${x},${y}`).join(' ')}" />`
+    )
 
-  // Lines at 60° (bottom-left to top-right)
-  // These cross the tile diagonally. Need multiple shifted copies.
-  const dx60 = h / Math.tan(Math.PI / 3) // horizontal run for full tile height
-  for (let i = -2; i <= 2; i++) {
-    const startX = i * s / 2
-    lines.push(`<line x1="${startX}" y1="${h}" x2="${startX + dx60}" y2="0" />`)
+    // Downward triangle: vertices at 90°, -30°, -150°
+    const downAngles = [Math.PI / 2, -Math.PI / 6, -Math.PI * 5 / 6]
+    const downVerts = downAngles.map((a) => [cx + R * Math.cos(a), cy + R * Math.sin(a)])
+    parts.push(
+      `<polygon points="${downVerts.map(([x, y]) => `${x},${y}`).join(' ')}" />`
+    )
+
+    return parts.join('')
   }
 
-  // Lines at 120° (bottom-right to top-left)
-  for (let i = -2; i <= 2; i++) {
-    const startX = i * s / 2
-    lines.push(`<line x1="${startX + s}" y1="${h}" x2="${startX + s - dx60}" y2="0" />`)
+  const parts: string[] = []
+
+  // Hex grid centers (same as asanoha/kikkou) + ghosts for clean tiling
+  const h = R * 3
+  const centers: [number, number][] = [
+    [w / 2, R],
+    [0, 2.5 * R],
+    [w, 2.5 * R],
+    [-w / 2, R],
+    [w + w / 2, R],
+    [w / 2, R - h],
+    [0, 2.5 * R - h],
+    [w, 2.5 * R - h],
+    [w / 2, R + h],
+    [0, 2.5 * R + h],
+    [w, 2.5 * R + h],
+  ]
+
+  for (const [cx, cy] of centers) {
+    parts.push(drawHexagram(cx, cy))
   }
 
-  return `<g stroke="${color1}" stroke-width="${strokeWidth}" opacity="${opacity}" fill="none">${lines.join('')}</g>`
+  return `<g stroke="${color1}" stroke-width="${strokeWidth}" opacity="${opacity}" fill="none">${parts.join('')}</g>`
 }
 
 export const kagome: PatternDefinition = {
@@ -45,11 +62,12 @@ export const kagome: PatternDefinition = {
   defaultParams: {
     color1: '#6b5b3d',
     color2: '#f5f0e8',
-    scale: 48,
+    scale: 40,
     strokeWidth: 1,
     rotation: 0,
     opacity: 1,
   },
   hasAccentColor: false,
-  tileHeight: (scale) => scale * Math.sqrt(3),
+  tileWidth: (scale) => (scale / 2) * Math.sqrt(3),
+  tileHeight: (scale) => (scale / 2) * 3,
 }
