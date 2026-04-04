@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useMemo } from 'react'
 import type { PatternDefinition, PatternParams } from '../patterns/types.ts'
 import { useT } from '../i18n/index.ts'
 import { buildPatternSvg } from '../utils/svg-builder.ts'
@@ -18,8 +18,14 @@ export function ExportPanel({ pattern, params }: ExportPanelProps) {
   const [pngSize, setPngSize] = useState<number>(1024)
   const [exporting, setExporting] = useState(false)
 
-  const svgString = buildPatternSvg(pattern, params, 400, 400)
-  const cssString = generateCss(pattern, params)
+  const svgString = useMemo(
+    () => buildPatternSvg(pattern, params, 400, 400),
+    [pattern, params],
+  )
+  const cssString = useMemo(
+    () => generateCss(pattern, params),
+    [pattern, params],
+  )
 
   const handleDownloadSvg = useCallback(() => {
     const fullSvg = buildPatternSvg(pattern, params, pngSize, pngSize)

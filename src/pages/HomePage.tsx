@@ -3,6 +3,7 @@ import { useT, useLang, langPath } from '../i18n/index.ts'
 import { PageHead } from '../components/PageHead.tsx'
 import { JsonLd } from '../components/JsonLd.tsx'
 import { PATTERN_LIST } from '../patterns/index.ts'
+import { getTileDimensions } from '../patterns/types.ts'
 
 const SITE_URL = 'https://wagara-gen.pages.dev'
 
@@ -36,6 +37,7 @@ export function HomePage() {
       <section className="pattern-gallery">
         {PATTERN_LIST.map((pattern) => {
           const info = t.patterns[pattern.id]
+          const { width: tw, height: th } = getTileDimensions(pattern, pattern.defaultParams.scale)
           return (
             <Link
               key={pattern.id}
@@ -47,12 +49,14 @@ export function HomePage() {
                   width="100%"
                   height="100%"
                   xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label={info?.name ?? pattern.id}
                 >
                   <defs>
                     <pattern
                       id={`preview-${pattern.id}`}
-                      width={pattern.defaultParams.scale}
-                      height={pattern.defaultParams.scale}
+                      width={tw}
+                      height={th}
                       patternUnits="userSpaceOnUse"
                     >
                       <g

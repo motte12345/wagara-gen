@@ -8,10 +8,9 @@ import { ExportPanel } from '../components/ExportPanel.tsx'
 import { CultureSection } from '../components/CultureSection.tsx'
 import { JsonLd } from '../components/JsonLd.tsx'
 import { getPattern } from '../patterns/index.ts'
+import { useEditorParams } from '../hooks/useEditorParams.ts'
 
 const SITE_URL = 'https://wagara-gen.pages.dev'
-import type { PatternParams } from '../patterns/types.ts'
-import { usePersistedState } from '../hooks/usePersistedState.ts'
 
 export function EditorPage() {
   const { pattern: patternId } = useParams<{ pattern: string }>()
@@ -20,8 +19,8 @@ export function EditorPage() {
 
   const pattern = patternId ? getPattern(patternId) : undefined
 
-  const [params, setParams] = usePersistedState<PatternParams>(
-    `editor:${patternId ?? ''}`,
+  const [params, setParams] = useEditorParams(
+    patternId ?? '',
     pattern?.defaultParams ?? {
       color1: '#333333',
       color2: '#ffffff',

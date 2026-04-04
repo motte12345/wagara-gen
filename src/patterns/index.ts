@@ -13,6 +13,7 @@ import { sakura } from './sakura.ts'
 import { nami } from './nami.ts'
 
 export type { PatternParams, PatternDefinition } from './types.ts'
+export { getTileDimensions } from './types.ts'
 
 export const PATTERN_LIST: readonly PatternDefinition[] = [
   ichimatsu,

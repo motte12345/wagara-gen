@@ -13,4 +13,19 @@ export interface PatternDefinition {
   readonly generate: (params: PatternParams) => string
   readonly defaultParams: PatternParams
   readonly hasAccentColor: boolean
+  /** Tile width as a function of scale. Defaults to scale if omitted. */
+  readonly tileWidth?: (scale: number) => number
+  /** Tile height as a function of scale. Defaults to scale if omitted. */
+  readonly tileHeight?: (scale: number) => number
+}
+
+/** Get the actual tile dimensions for a pattern at a given scale. */
+export function getTileDimensions(
+  pattern: PatternDefinition,
+  scale: number,
+): { width: number; height: number } {
+  return {
+    width: pattern.tileWidth ? pattern.tileWidth(scale) : scale,
+    height: pattern.tileHeight ? pattern.tileHeight(scale) : scale,
+  }
 }

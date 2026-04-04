@@ -1,5 +1,6 @@
 import type { PatternDefinition, PatternParams } from '../patterns/types.ts'
 import { useT } from '../i18n/index.ts'
+import { isValidColor } from '../utils/sanitize-color.ts'
 
 interface EditorControlsProps {
   readonly pattern: PatternDefinition
@@ -15,6 +16,20 @@ export function EditorControls({ pattern, params, onChange, onReset }: EditorCon
     onChange({ ...params, [key]: value })
   }
 
+  const updateColor = (key: 'color1' | 'color2' | 'color3', value: string) => {
+    // Allow typing in progress (e.g. "#f") but only update if potentially valid hex
+    if (/^#[0-9a-fA-F]{0,6}$/.test(value)) {
+      update(key, value)
+    }
+  }
+
+  const normalizeColorOnBlur = (key: 'color1' | 'color2' | 'color3') => {
+    const value = params[key]
+    if (value && !isValidColor(value)) {
+      update(key, pattern.defaultParams[key] ?? pattern.defaultParams.color1)
+    }
+  }
+
   return (
     <div className="editor-controls">
       <div className="control-group">
@@ -23,13 +38,14 @@ export function EditorControls({ pattern, params, onChange, onReset }: EditorCon
           <input
             id="color1"
             type="color"
-            value={params.color1}
+            value={isValidColor(params.color1) ? params.color1 : '#000000'}
             onChange={(e) => update('color1', e.target.value)}
           />
           <input
             type="text"
             value={params.color1}
-            onChange={(e) => update('color1', e.target.value)}
+            onChange={(e) => updateColor('color1', e.target.value)}
+            onBlur={() => normalizeColorOnBlur('color1')}
             maxLength={7}
             className="hex-input"
           />
@@ -42,13 +58,14 @@ export function EditorControls({ pattern, params, onChange, onReset }: EditorCon
           <input
             id="color2"
             type="color"
-            value={params.color2}
+            value={isValidColor(params.color2) ? params.color2 : '#ffffff'}
             onChange={(e) => update('color2', e.target.value)}
           />
           <input
             type="text"
             value={params.color2}
-            onChange={(e) => update('color2', e.target.value)}
+            onChange={(e) => updateColor('color2', e.target.value)}
+            onBlur={() => normalizeColorOnBlur('color2')}
             maxLength={7}
             className="hex-input"
           />
@@ -62,13 +79,14 @@ export function EditorControls({ pattern, params, onChange, onReset }: EditorCon
             <input
               id="color3"
               type="color"
-              value={params.color3 ?? params.color1}
+              value={isValidColor(params.color3 ?? '') ? params.color3! : params.color1}
               onChange={(e) => update('color3', e.target.value)}
             />
             <input
               type="text"
               value={params.color3 ?? params.color1}
-              onChange={(e) => update('color3', e.target.value)}
+              onChange={(e) => updateColor('color3', e.target.value)}
+              onBlur={() => normalizeColorOnBlur('color3')}
               maxLength={7}
               className="hex-input"
             />
