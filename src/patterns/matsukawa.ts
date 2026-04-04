@@ -5,10 +5,10 @@ import type { PatternDefinition, PatternParams } from './types.ts'
 const PATH_D = 'm10 0 6 3-2 1 6 3-6 3 2 1-6 3-6-3 2-1-6-3 6-3-2-1z'
 
 function generate(params: PatternParams): string {
-  const { color1, color2, scale, opacity } = params
+  const { color1, scale, opacity } = params
   const s = scale / 20
 
-  return `<g transform="scale(${s})" opacity="${opacity}"><rect width="20" height="14" fill="${color2}" /><path d="${PATH_D}" fill="${color1}" /></g>`
+  return `<g transform="scale(${s})" opacity="${opacity}"><path d="${PATH_D}" fill="${color1}" /></g>`
 }
 
 export const matsukawa: PatternDefinition = {

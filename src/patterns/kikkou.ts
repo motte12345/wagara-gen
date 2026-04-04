@@ -57,6 +57,7 @@ export const kikkou: PatternDefinition = {
     opacity: 1,
   },
   hasAccentColor: false,
+  usesStroke: true,
   tileWidth: (scale) => (scale / 2) * Math.sqrt(3),
   tileHeight: (scale) => (scale / 2) * 3,
 }

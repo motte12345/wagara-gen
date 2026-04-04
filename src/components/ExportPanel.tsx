@@ -17,6 +17,7 @@ export function ExportPanel({ pattern, params }: ExportPanelProps) {
   const t = useT()
   const [pngSize, setPngSize] = useState<number>(1024)
   const [exporting, setExporting] = useState(false)
+  const [exportError, setExportError] = useState<string | null>(null)
 
   const svgString = useMemo(
     () => buildPatternSvg(pattern, params, 400, 400),
@@ -34,12 +35,14 @@ export function ExportPanel({ pattern, params }: ExportPanelProps) {
 
   const handleDownloadPng = useCallback(async () => {
     setExporting(true)
+    setExportError(null)
     try {
       const fullSvg = buildPatternSvg(pattern, params, pngSize, pngSize)
       const blob = await svgToPng(fullSvg, pngSize)
       downloadBlob(blob, `${pattern.id}.png`)
     } catch (err) {
       console.error('PNG export failed:', err)
+      setExportError('PNG export failed. Please try a smaller size.')
     } finally {
       setExporting(false)
     }
@@ -83,6 +86,10 @@ export function ExportPanel({ pattern, params }: ExportPanelProps) {
           {exporting ? '...' : t.editor.downloadPng}
         </button>
       </div>
+
+      {exportError && (
+        <p className="export-error" role="alert">{exportError}</p>
+      )}
 
       <div className="export-copy">
         <CopyButton text={svgString} label={t.editor.copySvg} />

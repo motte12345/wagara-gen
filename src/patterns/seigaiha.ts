@@ -29,12 +29,12 @@ const PATH_D = [
 ].join('')
 
 function generate(params: PatternParams): string {
-  const { color1, color2, scale, opacity } = params
+  const { color1, scale, opacity } = params
 
   // Tile: 120×60, scaled via transform
   const s = scale / 120
 
-  return `<g transform="scale(${s})" opacity="${opacity}"><rect width="120" height="60" fill="${color2}" /><path d="${PATH_D}" fill="${color1}" /></g>`
+  return `<g transform="scale(${s})" opacity="${opacity}"><path d="${PATH_D}" fill="${color1}" /></g>`
 }
 
 export const seigaiha: PatternDefinition = {

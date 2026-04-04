@@ -66,4 +66,5 @@ export const karakusa: PatternDefinition = {
     opacity: 1,
   },
   hasAccentColor: false,
+  usesStroke: true,
 }

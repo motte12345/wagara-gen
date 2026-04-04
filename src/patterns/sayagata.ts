@@ -24,13 +24,13 @@ const PATH_D = [
 ].join('')
 
 function generate(params: PatternParams): string {
-  const { color1, color2, scale, opacity } = params
+  const { color1, scale, opacity } = params
 
   // Sayagata (紗綾形): interlocking manji maze pattern
   // Base tile: 128×128, scaled via transform
   const s = scale / 128
 
-  return `<g transform="scale(${s})" opacity="${opacity}"><rect width="128" height="128" fill="${color2}" /><path d="${PATH_D}" fill="${color1}" /></g>`
+  return `<g transform="scale(${s})" opacity="${opacity}"><path d="${PATH_D}" fill="${color1}" /></g>`
 }
 
 export const sayagata: PatternDefinition = {

@@ -5,10 +5,10 @@ import type { PatternDefinition, PatternParams } from './types.ts'
 const PATH_D = 'm1 0a1 1 0 0 1 1 1a1 1 0 0 0-1 1a1 1 0 0 1-1-1a1 1 0 0 0 1-1z'
 
 function generate(params: PatternParams): string {
-  const { color1, color2, scale, opacity } = params
+  const { color1, scale, opacity } = params
   const s = scale / 2
 
-  return `<g transform="scale(${s})" opacity="${opacity}"><rect width="2" height="2" fill="${color2}" /><path d="${PATH_D}" fill="${color1}" /></g>`
+  return `<g transform="scale(${s})" opacity="${opacity}"><path d="${PATH_D}" fill="${color1}" /></g>`
 }
 
 export const fundou: PatternDefinition = {

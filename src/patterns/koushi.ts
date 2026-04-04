@@ -27,4 +27,5 @@ export const koushi: PatternDefinition = {
     opacity: 1,
   },
   hasAccentColor: false,
+  usesStroke: true,
 }

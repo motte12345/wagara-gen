@@ -37,4 +37,5 @@ export const tatewaku: PatternDefinition = {
     opacity: 1,
   },
   hasAccentColor: false,
+  usesStroke: true,
 }

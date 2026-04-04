@@ -37,4 +37,5 @@ export const nami: PatternDefinition = {
     opacity: 1,
   },
   hasAccentColor: false,
+  usesStroke: true,
 }

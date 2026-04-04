@@ -22,10 +22,10 @@ const PATH_D = [
 ].join('')
 
 function generate(params: PatternParams): string {
-  const { color1, color2, scale, opacity } = params
+  const { color1, scale, opacity } = params
   const s = scale / 24
 
-  return `<g transform="scale(${s})" opacity="${opacity}"><rect width="24" height="24" fill="${color2}" /><path d="${PATH_D}" fill="${color1}" /></g>`
+  return `<g transform="scale(${s})" opacity="${opacity}"><path d="${PATH_D}" fill="${color1}" /></g>`
 }
 
 export const hishiseigaiha: PatternDefinition = {

@@ -83,7 +83,7 @@ export function useEditorParams(
       }
       initializedRef.current = true
     }
-  })
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const setParams = useCallback(
     (newParams: PatternParams) => {

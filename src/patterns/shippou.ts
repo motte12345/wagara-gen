@@ -31,4 +31,5 @@ export const shippou: PatternDefinition = {
     opacity: 1,
   },
   hasAccentColor: false,
+  usesStroke: true,
 }

@@ -109,20 +109,22 @@ export function EditorControls({ pattern, params, onChange, onReset }: EditorCon
         />
       </div>
 
-      <div className="control-group">
-        <label htmlFor="strokeWidth">
-          {t.editor.strokeWidth}: {params.strokeWidth}px
-        </label>
-        <input
-          id="strokeWidth"
-          type="range"
-          min={0.5}
-          max={5}
-          step={0.5}
-          value={params.strokeWidth}
-          onChange={(e) => update('strokeWidth', Number(e.target.value))}
-        />
-      </div>
+      {pattern.usesStroke && (
+        <div className="control-group">
+          <label htmlFor="strokeWidth">
+            {t.editor.strokeWidth}: {params.strokeWidth}px
+          </label>
+          <input
+            id="strokeWidth"
+            type="range"
+            min={0.5}
+            max={5}
+            step={0.5}
+            value={params.strokeWidth}
+            onChange={(e) => update('strokeWidth', Number(e.target.value))}
+          />
+        </div>
+      )}
 
       <div className="control-group">
         <label htmlFor="rotation">

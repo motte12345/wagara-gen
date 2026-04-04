@@ -13,6 +13,8 @@ export interface PatternDefinition {
   readonly generate: (params: PatternParams) => string
   readonly defaultParams: PatternParams
   readonly hasAccentColor: boolean
+  /** Whether strokeWidth parameter affects this pattern's rendering. Defaults to false. */
+  readonly usesStroke?: boolean
   /** Tile width as a function of scale. Defaults to scale if omitted. */
   readonly tileWidth?: (scale: number) => number
   /** Tile height as a function of scale. Defaults to scale if omitted. */

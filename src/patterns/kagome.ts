@@ -23,6 +23,7 @@ export const kagome: PatternDefinition = {
     opacity: 1,
   },
   hasAccentColor: false,
+  usesStroke: true,
   tileWidth: (scale) => scale,
   tileHeight: (scale) => scale * 1.5,
 }

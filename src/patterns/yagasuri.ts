@@ -1,7 +1,7 @@
 import type { PatternDefinition, PatternParams } from './types.ts'
 
 function generate(params: PatternParams): string {
-  const { color1, color2, scale, opacity } = params
+  const { color1, scale, opacity } = params
 
   // Yagasuri (矢絣): filled arrow-feather chevrons with vertical dividers
   // Base tile: 80×120, two columns of alternating chevrons
@@ -21,10 +21,7 @@ function generate(params: PatternParams): string {
     `M${p(40,60)}L${p(59,79)}L${p(61,79)}L${p(80,60)}L${p(80,120)}L${p(61,139)}L${p(59,139)}L${p(40,120)}Z`,
   ].join('')
 
-  const tw = 80 * s
-  const th = 120 * s
-
-  return `<rect width="${tw}" height="${th}" fill="${color2}" opacity="${opacity}" /><path d="${d}" fill="${color1}" fill-rule="evenodd" opacity="${opacity}" />`
+  return `<path d="${d}" fill="${color1}" fill-rule="evenodd" opacity="${opacity}" />`
 }
 
 export const yagasuri: PatternDefinition = {

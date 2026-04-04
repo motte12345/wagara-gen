@@ -49,4 +49,5 @@ export const sakura: PatternDefinition = {
     opacity: 1,
   },
   hasAccentColor: true,
+  usesStroke: true,
 }
