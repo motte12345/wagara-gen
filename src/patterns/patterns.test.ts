@@ -12,8 +12,8 @@ const defaultTestParams: PatternParams = {
 }
 
 describe('Pattern registry', () => {
-  it('has 14 patterns', () => {
-    expect(PATTERN_LIST).toHaveLength(14)
+  it('has 22 patterns', () => {
+    expect(PATTERN_LIST).toHaveLength(22)
   })
 
   it('has unique IDs', () => {
