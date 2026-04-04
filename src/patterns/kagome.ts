@@ -20,11 +20,13 @@ function generate(params: PatternParams): string {
   // This gives uniform pair spacing.
   const lines: string[] = []
 
-  // Horizontal lines (pairs: [h/6, h/3] and [h*2/3, h*5/6])
-  lines.push(`<line x1="0" y1="${h / 6}" x2="${s}" y2="${h / 6}" />`)
-  lines.push(`<line x1="0" y1="${h / 3}" x2="${s}" y2="${h / 3}" />`)
-  lines.push(`<line x1="0" y1="${h * 2 / 3}" x2="${s}" y2="${h * 2 / 3}" />`)
-  lines.push(`<line x1="0" y1="${h * 5 / 6}" x2="${s}" y2="${h * 5 / 6}" />`)
+  // Horizontal lines: uniform spacing h/4.
+  // This makes hex height = 2*(h/4) and triangle height = h/4,
+  // both giving side length a = s/2 for regular shapes.
+  lines.push(`<line x1="0" y1="0" x2="${s}" y2="0" />`)
+  lines.push(`<line x1="0" y1="${h / 4}" x2="${s}" y2="${h / 4}" />`)
+  lines.push(`<line x1="0" y1="${h / 2}" x2="${s}" y2="${h / 2}" />`)
+  lines.push(`<line x1="0" y1="${h * 3 / 4}" x2="${s}" y2="${h * 3 / 4}" />`)
 
   // Lines at 60° (bottom-left to top-right)
   const dx60 = h / Math.tan(Math.PI / 3)
