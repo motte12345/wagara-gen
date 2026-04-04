@@ -12,7 +12,7 @@ function generate(params: PatternParams): string {
 
   const d = scale
   const r = d / 2
-  const th = r           // tile height
+  const th = r * 0.7     // tile height (tight packing — each dome ~35% visible)
   const rings = 4
   const accent = color3 ?? color1
 
@@ -60,5 +60,5 @@ export const seigaiha: PatternDefinition = {
     opacity: 1,
   },
   hasAccentColor: true,
-  tileHeight: (scale) => scale / 2,
+  tileHeight: (scale) => scale * 0.35,
 }
