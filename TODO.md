@@ -45,7 +45,7 @@
 - [x] SEO（JSON-LD WebApplication、PageHead hreflang、OGP metaタグ）
 - [x] sitemap.xml（全12パターン × 2言語 + Home + About = 28 URL）
 - [x] GA4（プレースホルダーID — GA4プロパティ作成後に差し替え）
-- [ ] GitHub → Cloudflare Pages デプロイ
+- [x] GitHub → Cloudflare Pages デプロイ（https://wagara-gen.pages.dev）
 
 ## Phase 2
 - [ ] 追加紋様 8種
