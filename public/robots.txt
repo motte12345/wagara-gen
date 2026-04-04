@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wagara-gen.pages.dev/sitemap.xml
