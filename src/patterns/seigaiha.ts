@@ -2,29 +2,33 @@ import type { PatternDefinition, PatternParams } from './types.ts'
 
 function generate(params: PatternParams): string {
   const { color1, color2, color3, scale, strokeWidth, opacity } = params
-  // Seigaiha: concentric semicircles in overlapping rows.
-  // Each wave dome is OPAQUE — a filled semicircle (background color)
-  // with concentric arc strokes on top. This way, front-row domes
-  // naturally mask back-row domes, creating the classic layered look.
+  // Seigaiha: concentric semicircular arcs in overlapping rows.
   //
-  // Tile: width = scale, height = scale/2.
-  // Back row (offset) drawn first, front row drawn on top.
+  // Based on the parallelogram tiling approach:
+  //   Shiftx = (d, 0)       — horizontal period = diameter
+  //   Shifty = (r, r)       — each row shifts right by r AND down by r
+  //
+  // Rectangular tile: width = d = scale, height = 2r = scale.
+  // Contains two rows:
+  //   Back row  (drawn first): centers at (0, r/2) and (d, r/2)
+  //   Front row (drawn second): center at (r, 3r/2)
+  //
+  // Each dome has a filled semicircle (background) to mask the row behind it.
 
   const d = scale
   const r = d / 2
-  const th = r * 0.85    // tile height — slightly less than r for diagonal cascade
   const rings = 4
   const accent = color3 ?? color1
 
   const makeWaveUnit = (cx: number, cy: number): string => {
     const parts: string[] = []
 
-    // 1. Opaque filled semicircle — masks everything behind this dome
+    // Opaque filled semicircle — masks arcs behind this dome
     parts.push(
       `<path d="M ${cx - r},${cy} A ${r},${r} 0 0,1 ${cx + r},${cy} Z" fill="${color2}" />`
     )
 
-    // 2. Concentric arc strokes (largest to smallest)
+    // Concentric arc strokes
     for (let i = rings; i >= 1; i--) {
       const ri = (r * i) / rings
       const col = i === 2 ? accent : color1
@@ -38,11 +42,11 @@ function generate(params: PatternParams): string {
 
   return [
     `<g opacity="${opacity}">`,
-    // Back row (drawn first = behind): offset by half diameter, at mid-tile
-    makeWaveUnit(0, th / 2),
-    makeWaveUnit(d, th / 2),
-    // Front row (drawn second = on top): centered, at bottom of tile
-    makeWaveUnit(r, th),
+    // Back row (behind): at y = r/2, offset at tile edges
+    makeWaveUnit(0, r / 2),
+    makeWaveUnit(d, r / 2),
+    // Front row (on top): at y = 3r/2, centered
+    makeWaveUnit(r, r * 3 / 2),
     `</g>`,
   ].join('')
 }
@@ -60,5 +64,5 @@ export const seigaiha: PatternDefinition = {
     opacity: 1,
   },
   hasAccentColor: true,
-  tileHeight: (scale) => scale * 0.425,
+  // tileHeight = scale (= 2r), same as width — no override needed
 }
