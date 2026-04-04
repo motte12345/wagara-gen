@@ -63,7 +63,7 @@ export const seigaiha: PatternDefinition = {
     color2: '#f5f0e8',
     color3: '#4a90d9',
     scale: 60,
-    strokeWidth: 1,
+    strokeWidth: 3,
     rotation: 0,
     opacity: 1,
   },
