@@ -42,7 +42,12 @@ function generate(params: PatternParams): string {
 
   return [
     `<g opacity="${opacity}">`,
-    // Back row (behind): at y = r/2, offset at tile edges
+    // Ghost back row from below (fills gap at tile bottom, y=3r/2 to y=2r)
+    makeWaveUnit(0, r * 5 / 2),
+    makeWaveUnit(d, r * 5 / 2),
+    // Ghost front row from above (fills gap at tile top)
+    makeWaveUnit(r, -r / 2),
+    // Back row: at y = r/2, offset at tile edges
     makeWaveUnit(0, r / 2),
     makeWaveUnit(d, r / 2),
     // Front row (on top): at y = 3r/2, centered
