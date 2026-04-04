@@ -1,61 +1,44 @@
 import type { PatternDefinition, PatternParams } from './types.ts'
 
 function generate(params: PatternParams): string {
-  const { color1, color2: _bg, scale, strokeWidth, opacity } = params
+  const { color1, color2, scale, opacity } = params
 
-  // Yagasuri (arrow feathers): columns of arrow-fletching shapes.
-  // Each feather is a rectangle with diagonal lines (barbs).
-  // Adjacent columns point in opposite directions.
-  // Tile: width = scale, height = scale.
+  // Yagasuri (矢絣): filled arrow-feather chevrons with vertical dividers
+  // Base tile: 80×120, two columns of alternating chevrons
+  const s = scale / 80
+  const p = (x: number, y: number) => `${x * s},${y * s}`
 
-  const s = scale
-  const hw = s / 2  // half width (one column)
-  const barbs = 4   // number of diagonal barb lines per feather
+  const d = [
+    // Chevron at (0,0)-(40,60)
+    `M${p(0,0)}L${p(19,19)}L${p(21,19)}L${p(40,0)}L${p(40,60)}L${p(21,79)}L${p(19,79)}L${p(0,60)}Z`,
+    // Vertical line at x=19-21
+    `M${p(19,-60)}L${p(21,-60)}L${p(21,180)}L${p(19,180)}Z`,
+    // Chevron at (40,-60)-(80,0)
+    `M${p(40,-60)}L${p(59,-41)}L${p(61,-41)}L${p(80,-60)}L${p(80,0)}L${p(61,19)}L${p(59,19)}L${p(40,0)}Z`,
+    // Vertical line at x=59-61
+    `M${p(59,-60)}L${p(61,-60)}L${p(61,180)}L${p(59,180)}Z`,
+    // Chevron at (40,60)-(80,120)
+    `M${p(40,60)}L${p(59,79)}L${p(61,79)}L${p(80,60)}L${p(80,120)}L${p(61,139)}L${p(59,139)}L${p(40,120)}Z`,
+  ].join('')
 
-  const lines: string[] = []
+  const tw = 80 * s
+  const th = 120 * s
 
-  // Column dividers
-  lines.push(`<line x1="${hw}" y1="0" x2="${hw}" y2="${s}" />`)
-
-  // Left column: barbs going upper-left to lower-right (arrow pointing up)
-  for (let i = 0; i <= barbs; i++) {
-    const y = (s * i) / barbs
-    // Diagonal from left edge to center line
-    lines.push(`<line x1="0" y1="${y}" x2="${hw}" y2="${y}" />`)
-  }
-  // Diagonal barb lines within left column
-  for (let i = 0; i < barbs; i++) {
-    const y1 = (s * i) / barbs
-    const y2 = (s * (i + 1)) / barbs
-    // Each feather section has a diagonal line
-    lines.push(`<line x1="0" y1="${y2}" x2="${hw}" y2="${y1}" />`)
-  }
-
-  // Right column: barbs in opposite direction (arrow pointing down)
-  for (let i = 0; i <= barbs; i++) {
-    const y = (s * i) / barbs
-    lines.push(`<line x1="${hw}" y1="${y}" x2="${s}" y2="${y}" />`)
-  }
-  for (let i = 0; i < barbs; i++) {
-    const y1 = (s * i) / barbs
-    const y2 = (s * (i + 1)) / barbs
-    lines.push(`<line x1="${hw}" y1="${y1}" x2="${s}" y2="${y2}" />`)
-  }
-
-  void _bg
-  return `<g stroke="${color1}" stroke-width="${strokeWidth}" opacity="${opacity}" fill="none">${lines.join('')}</g>`
+  return `<rect width="${tw}" height="${th}" fill="${color2}" opacity="${opacity}" /><path d="${d}" fill="${color1}" fill-rule="evenodd" opacity="${opacity}" />`
 }
 
 export const yagasuri: PatternDefinition = {
   id: 'yagasuri',
   generate,
   defaultParams: {
-    color1: '#8b2252',
-    color2: '#f5f0e8',
-    scale: 40,
+    color1: '#808080',
+    color2: '#cccccc',
+    scale: 80,
     strokeWidth: 1,
     rotation: 0,
     opacity: 1,
   },
   hasAccentColor: false,
+  tileWidth: (scale) => scale,
+  tileHeight: (scale) => scale * 1.5,
 }

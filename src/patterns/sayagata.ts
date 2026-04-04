@@ -3,44 +3,21 @@ import type { PatternDefinition, PatternParams } from './types.ts'
 function generate(params: PatternParams): string {
   const { color1, scale, strokeWidth, opacity } = params
 
-  // Sayagata (紗綾形): interlocking manji (卍) pattern forming a continuous maze.
-  // The pattern consists of connected right-angle hooks.
-  // Tile: scale × scale (square), divided into a 4×4 sub-grid.
+  // Sayagata (紗綾形): interlocking manji pattern
+  // Base tile: 20×10, path extends beyond for seamless tiling
+  const s = scale / 20
+  const p = (x: number, y: number) => `${x * s},${y * s}`
 
-  const s = scale
-  const u = s / 4  // sub-grid unit
+  const d = [
+    `M${p(1,8)}`, `L${p(15,1)}`, `L${p(17,2)}`, `L${p(15,3)}`, `L${p(17,4)}`,
+    `L${p(15,5)}`, `L${p(13,4)}`, `L${p(11,5)}`, `L${p(25,12)}`, `L${p(27,11)}`,
+    `L${p(25,10)}`, `L${p(27,9)}`, `L${p(29,10)}`, `L${p(31,9)}`, `L${p(33,10)}`,
+    `L${p(19,17)}`, `L${p(17,16)}`, `L${p(19,15)}`, `L${p(17,14)}`, `L${p(19,13)}`,
+    `L${p(21,14)}`, `L${p(23,13)}`, `L${p(9,6)}`, `L${p(7,7)}`, `L${p(9,8)}`,
+    `L${p(7,9)}`, `L${p(5,8)}`, `L${p(3,9)}`, `L${p(1,8)}`, 'Z',
+  ].join(' ')
 
-  // The sayagata is built from a specific arrangement of line segments
-  // within a square tile. Two manji units interlock.
-
-  // Path as a single continuous polyline-like structure
-  const segments = [
-    // Upper-left manji (卍)
-    // Horizontal bar
-    [0, u, u * 2, u],
-    // Vertical bar
-    [u, 0, u, u * 2],
-    // Right hook (goes up from end of horizontal)
-    [u * 2, u, u * 2, 0],
-    // Bottom hook (goes left from end of vertical)
-    [u, u * 2, 0, u * 2],
-
-    // Lower-right manji (卍, rotated 180°)
-    [u * 2, u * 3, u * 4, u * 3],
-    [u * 3, u * 2, u * 3, u * 4],
-    [u * 4, u * 3, u * 4, u * 2],
-    [u * 3, u * 4, u * 2, u * 4],
-
-    // Connecting segments between the two manji
-    [u * 2, u * 2, u * 2, u * 3],
-    [u * 2, u * 2, u * 3, u * 2],
-  ]
-
-  const lineEls = segments.map(
-    ([x1, y1, x2, y2]) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" />`
-  ).join('')
-
-  return `<g stroke="${color1}" stroke-width="${strokeWidth}" opacity="${opacity}" fill="none" stroke-linecap="round">${lineEls}</g>`
+  return `<path d="${d}" fill="none" stroke="${color1}" stroke-width="${strokeWidth}" opacity="${opacity}" />`
 }
 
 export const sayagata: PatternDefinition = {
@@ -55,4 +32,6 @@ export const sayagata: PatternDefinition = {
     opacity: 1,
   },
   hasAccentColor: false,
+  tileWidth: (scale) => scale,
+  tileHeight: (scale) => scale / 2,
 }
