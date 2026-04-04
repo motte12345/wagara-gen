@@ -3,42 +3,39 @@ import type { PatternDefinition, PatternParams } from './types.ts'
 function generate(params: PatternParams): string {
   const { color1, scale, strokeWidth, opacity } = params
 
-  // Kagome (basket weave): three sets of parallel lines at 0°, 60°, 120°
-  // forming hexagram stars with hexagonal holes.
+  // Kagome: overlapping regular hexagon outlines.
+  // The hexagons overlap, and the overlapping edges create
+  // the characteristic six-pointed star + hexagonal hole pattern.
   //
-  // Horizontal lines come in pairs (h/6 apart), with h/3 gaps between pairs.
-  // This alternating spacing is inherent to the trihexagonal tiling —
-  // it creates equal-sized regular hexagons and equilateral triangles
-  // (both with side length s/3).
-  //
-  // Tile: width = scale, height = scale * √3.
+  // From reference: flat-top hexagons, radius R = scale/2.
+  // Shiftx = (R√3/2, R/2) — diagonal shift
+  // Shifty = (0, R) — vertical shift
+  // Rectangular tile: width = R√3, height = R.
 
-  const s = scale
-  const h = s * Math.sqrt(3)
-  const hh = h / 2
-
-  const lines: string[] = []
-
-  // Horizontal lines in pairs
-  lines.push(`<line x1="0" y1="${hh / 3}" x2="${s}" y2="${hh / 3}" />`)
-  lines.push(`<line x1="0" y1="${hh * 2 / 3}" x2="${s}" y2="${hh * 2 / 3}" />`)
-  lines.push(`<line x1="0" y1="${hh + hh / 3}" x2="${s}" y2="${hh + hh / 3}" />`)
-  lines.push(`<line x1="0" y1="${hh + hh * 2 / 3}" x2="${s}" y2="${hh + hh * 2 / 3}" />`)
-
-  // Lines at 60° (bottom-left to top-right)
-  const dx60 = h / Math.tan(Math.PI / 3)
-  for (let i = -2; i <= 2; i++) {
-    const startX = i * s / 2
-    lines.push(`<line x1="${startX}" y1="${h}" x2="${startX + dx60}" y2="0" />`)
+  const R = scale / 2
+  const sqrt3 = Math.sqrt(3)
+  // Flat-top hex vertices at (cx, cy)
+  const hexPoints = (cx: number, cy: number): string => {
+    const v: string[] = []
+    for (let i = 0; i < 6; i++) {
+      const angle = i * Math.PI / 3  // flat-top: starts at 0°
+      v.push(`${cx + R * Math.cos(angle)},${cy + R * Math.sin(angle)}`)
+    }
+    return v.join(' ')
   }
 
-  // Lines at 120° (bottom-right to top-left)
-  for (let i = -2; i <= 2; i++) {
-    const startX = i * s / 2
-    lines.push(`<line x1="${startX + s}" y1="${h}" x2="${startX + s - dx60}" y2="0" />`)
+  const polys: string[] = []
+
+  // Generate hex centers: n * Shiftx + m * Shifty, with enough ghosts
+  for (let n = -2; n <= 3; n++) {
+    for (let m = -2; m <= 2; m++) {
+      const cx = n * R * sqrt3 / 2 + m * 0
+      const cy = n * R / 2 + m * R
+      polys.push(`<polygon points="${hexPoints(cx, cy)}" />`)
+    }
   }
 
-  return `<g stroke="${color1}" stroke-width="${strokeWidth}" opacity="${opacity}" fill="none">${lines.join('')}</g>`
+  return `<g stroke="${color1}" stroke-width="${strokeWidth}" opacity="${opacity}" fill="none">${polys.join('')}</g>`
 }
 
 export const kagome: PatternDefinition = {
@@ -53,5 +50,6 @@ export const kagome: PatternDefinition = {
     opacity: 1,
   },
   hasAccentColor: false,
-  tileHeight: (scale) => scale * Math.sqrt(3),
+  tileWidth: (scale) => (scale / 2) * Math.sqrt(3),
+  tileHeight: (scale) => scale / 2,
 }
