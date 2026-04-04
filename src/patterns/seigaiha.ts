@@ -3,10 +3,17 @@ import type { PatternDefinition, PatternParams } from './types.ts'
 function generate(params: PatternParams): string {
   const { color1, color3, scale, strokeWidth, opacity } = params
   // Seigaiha: concentric semicircles in a brick-like offset arrangement.
-  // Tile: width = scale (one unit diameter), height = scale/2 (one unit radius).
-  // Row 0 arcs at bottom-center, row 1 arcs at top corners (offset by half).
+  // Each wave unit is a set of concentric upper-semicircular arcs.
+  // Rows are tightly packed with deep overlap, like fish scales.
+  //
+  // Tile: width = scale (diameter), height = scale/3 (tight vertical packing).
+  // Row spacing = tile_height / 2 = scale/6.
+  // Each arc has max radius = scale/2, extending well beyond the tile,
+  // creating deep overlap with rows above and below.
+
   const d = scale          // diameter of one wave unit
   const r = d / 2          // radius
+  const th = d / 3         // tile height (tight packing)
   const rings = 4
   const accent = color3 ?? color1
 
@@ -15,7 +22,6 @@ function generate(params: PatternParams): string {
     for (let i = rings; i >= 1; i--) {
       const ri = (r * i) / rings
       const col = i === 2 ? accent : color1
-      // Upper semicircle arc: from (cx-ri, cy) to (cx+ri, cy) going through top
       arcs.push(
         `<path d="M ${cx - ri},${cy} A ${ri},${ri} 0 0,1 ${cx + ri},${cy}" fill="none" stroke="${col}" stroke-width="${strokeWidth}" />`
       )
@@ -26,12 +32,10 @@ function generate(params: PatternParams): string {
   return [
     `<g opacity="${opacity}">`,
     // Row 0: arcs centered at bottom of tile
-    makeArcs(r, r),
-    // Row 1 (offset): arcs centered at mid-height of tile, at left/right edges.
-    // This creates the classic overlapping wave effect — arcs from row 1
-    // overlap with row 0 in the upper half of the tile.
-    makeArcs(0, r / 2),
-    makeArcs(d, r / 2),
+    makeArcs(r, th),
+    // Row 1 (offset): arcs centered at mid-height, shifted by half diameter
+    makeArcs(0, th / 2),
+    makeArcs(d, th / 2),
     `</g>`,
   ].join('')
 }
@@ -49,5 +53,5 @@ export const seigaiha: PatternDefinition = {
     opacity: 1,
   },
   hasAccentColor: true,
-  tileHeight: (scale) => scale / 2,
+  tileHeight: (scale) => scale / 3,
 }
