@@ -1,6 +1,7 @@
 import { useState, useCallback, useMemo } from 'react'
 import type { PatternDefinition, PatternParams } from '../patterns/types.ts'
-import { useT } from '../i18n/index.ts'
+import { useT, useLang } from '../i18n/index.ts'
+import { SITE_URL } from '../constants.ts'
 import { buildPatternSvg } from '../utils/svg-builder.ts'
 import { svgToPng, downloadBlob, downloadSvg } from '../utils/export-png.ts'
 import { generateCss } from '../utils/export-css.ts'
@@ -15,6 +16,7 @@ const PNG_SIZES = [512, 1024, 2048] as const
 
 export function ExportPanel({ pattern, params }: ExportPanelProps) {
   const t = useT()
+  const lang = useLang()
   const [pngSize, setPngSize] = useState<number>(1024)
   const [exporting, setExporting] = useState(false)
   const [exportError, setExportError] = useState<string | null>(null)
@@ -94,6 +96,26 @@ export function ExportPanel({ pattern, params }: ExportPanelProps) {
       <div className="export-copy">
         <CopyButton text={svgString} label={t.editor.copySvg} />
         <CopyButton text={cssString} label={t.editor.copyCss} />
+      </div>
+
+      <h2>{t.editor.share}</h2>
+      <div className="export-buttons">
+        <a
+          href={`https://x.com/intent/tweet?url=${encodeURIComponent(`${SITE_URL}/${lang}/${pattern.id}`)}&text=${encodeURIComponent(t.patterns[pattern.id]?.name ?? pattern.id)}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn--share"
+        >
+          {t.editor.shareTwitter}
+        </a>
+        <a
+          href={`https://pinterest.com/pin/create/button/?url=${encodeURIComponent(`${SITE_URL}/${lang}/${pattern.id}`)}&description=${encodeURIComponent(t.patterns[pattern.id]?.name ?? pattern.id)}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn--share"
+        >
+          {t.editor.sharePinterest}
+        </a>
       </div>
     </div>
   )

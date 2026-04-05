@@ -17,6 +17,8 @@ export interface Translations {
     footer: {
       about: string
       copyright: string
+      relatedTools: string
+      colorConv: string
     }
     langSwitch: string
   }
@@ -41,6 +43,9 @@ export interface Translations {
     preview: string
     pngSize: string
     reset: string
+    share: string
+    shareTwitter: string
+    sharePinterest: string
   }
   gallery: {
     search: string
@@ -59,6 +64,11 @@ export interface Translations {
     history: string
     symbolism: string
     modernUse: string
+    readMore: string
+    backToEditor: string
+    shopTitle: string
+    shopAmazon: string
+    editPattern: string
   }
   patterns: Record<string, {
     name: string

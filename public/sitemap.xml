@@ -30,6 +30,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wagara-gen.pages.dev/en/ichimatsu/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/ichimatsu/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/ichimatsu/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/ichimatsu/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/ichimatsu/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/ichimatsu/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://wagara-gen.pages.dev/en/asanoha</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/asanoha" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/asanoha" />
@@ -42,6 +56,20 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/asanoha" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/asanoha/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/asanoha/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/asanoha/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/asanoha/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/asanoha/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/asanoha/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://wagara-gen.pages.dev/en/seigaiha</loc>
@@ -58,6 +86,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wagara-gen.pages.dev/en/seigaiha/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/seigaiha/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/seigaiha/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/seigaiha/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/seigaiha/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/seigaiha/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://wagara-gen.pages.dev/en/uroko</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/uroko" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/uroko" />
@@ -70,6 +112,20 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/uroko" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/uroko/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/uroko/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/uroko/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/uroko/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/uroko/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/uroko/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://wagara-gen.pages.dev/en/shippou</loc>
@@ -86,6 +142,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wagara-gen.pages.dev/en/shippou/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/shippou/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/shippou/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/shippou/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/shippou/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/shippou/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://wagara-gen.pages.dev/en/kikkou</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kikkou" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kikkou" />
@@ -98,6 +168,20 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kikkou" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/kikkou/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kikkou/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kikkou/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/kikkou/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kikkou/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kikkou/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://wagara-gen.pages.dev/en/yagasuri</loc>
@@ -114,6 +198,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wagara-gen.pages.dev/en/yagasuri/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/yagasuri/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/yagasuri/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/yagasuri/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/yagasuri/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/yagasuri/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://wagara-gen.pages.dev/en/chidori</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/chidori" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidori" />
@@ -126,6 +224,20 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidori" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/chidori/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/chidori/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidori/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/chidori/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/chidori/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidori/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://wagara-gen.pages.dev/en/koushi</loc>
@@ -142,6 +254,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wagara-gen.pages.dev/en/koushi/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/koushi/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/koushi/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/koushi/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/koushi/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/koushi/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://wagara-gen.pages.dev/en/sayagata</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/sayagata" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/sayagata" />
@@ -154,6 +280,20 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/sayagata" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/sayagata/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/sayagata/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/sayagata/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/sayagata/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/sayagata/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/sayagata/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://wagara-gen.pages.dev/en/kagome</loc>
@@ -170,6 +310,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wagara-gen.pages.dev/en/kagome/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kagome/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kagome/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/kagome/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kagome/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kagome/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://wagara-gen.pages.dev/en/tatewaku</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/tatewaku" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/tatewaku" />
@@ -182,6 +336,20 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/tatewaku" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/tatewaku/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/tatewaku/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/tatewaku/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/tatewaku/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/tatewaku/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/tatewaku/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://wagara-gen.pages.dev/en/sakura</loc>
@@ -198,6 +366,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wagara-gen.pages.dev/en/sakura/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/sakura/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/sakura/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/sakura/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/sakura/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/sakura/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://wagara-gen.pages.dev/en/nami</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/nami" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/nami" />
@@ -210,6 +392,20 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/nami" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/nami/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/nami/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/nami/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/nami/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/nami/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/nami/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://wagara-gen.pages.dev/en/fundou</loc>
@@ -226,6 +422,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wagara-gen.pages.dev/en/fundou/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/fundou/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/fundou/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/fundou/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/fundou/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/fundou/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://wagara-gen.pages.dev/en/kouji</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kouji" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kouji" />
@@ -238,6 +448,20 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kouji" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/kouji/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kouji/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kouji/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/kouji/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kouji/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kouji/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://wagara-gen.pages.dev/en/juuji</loc>
@@ -254,6 +478,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wagara-gen.pages.dev/en/juuji/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/juuji/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/juuji/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/juuji/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/juuji/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/juuji/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://wagara-gen.pages.dev/en/matsukawa</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/matsukawa" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/matsukawa" />
@@ -266,6 +504,20 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/matsukawa" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/matsukawa/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/matsukawa/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/matsukawa/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/matsukawa/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/matsukawa/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/matsukawa/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://wagara-gen.pages.dev/en/hishiseigaiha</loc>
@@ -282,6 +534,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wagara-gen.pages.dev/en/hishiseigaiha/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/hishiseigaiha/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/hishiseigaiha/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/hishiseigaiha/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/hishiseigaiha/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/hishiseigaiha/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://wagara-gen.pages.dev/en/chidoritsunagi</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/chidoritsunagi" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidoritsunagi" />
@@ -294,6 +560,20 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidoritsunagi" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/chidoritsunagi/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/chidoritsunagi/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidoritsunagi/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/chidoritsunagi/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/chidoritsunagi/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidoritsunagi/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://wagara-gen.pages.dev/en/nawame</loc>
@@ -310,6 +590,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wagara-gen.pages.dev/en/nawame/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/nawame/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/nawame/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/nawame/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/nawame/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/nawame/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://wagara-gen.pages.dev/en/kazaguruma</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kazaguruma" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kazaguruma" />
@@ -322,6 +616,20 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kazaguruma" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/kazaguruma/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kazaguruma/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kazaguruma/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/kazaguruma/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kazaguruma/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kazaguruma/culture" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://wagara-gen.pages.dev/en/about</loc>

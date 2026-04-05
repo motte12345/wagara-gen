@@ -31,7 +31,10 @@ ${alternates}
 
 const entries = [
   urlEntry('/', '1.0', 'weekly'),
-  ...PATTERNS.map((id) => urlEntry(`/${id}`, '0.8')),
+  ...PATTERNS.flatMap((id) => [
+    urlEntry(`/${id}`, '0.8'),
+    urlEntry(`/${id}/culture`, '0.6'),
+  ]),
   urlEntry('/about', '0.3'),
 ]
 
@@ -44,4 +47,5 @@ ${entries.join('\n')}
 
 const outPath = resolve(__dirname, '..', 'public', 'sitemap.xml')
 writeFileSync(outPath, xml)
-console.log(`Generated sitemap.xml with ${LANGS.length * (1 + PATTERNS.length + 1)} URLs`)
+const totalUrls = LANGS.length * (1 + PATTERNS.length * 2 + 1)
+console.log(`Generated sitemap.xml with ${totalUrls} URLs`)

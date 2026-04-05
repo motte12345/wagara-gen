@@ -13,6 +13,9 @@ const EditorPage = lazy(() =>
 const AboutPage = lazy(() =>
   import('./pages/AboutPage.tsx').then((m) => ({ default: m.AboutPage })),
 )
+const CulturePage = lazy(() =>
+  import('./pages/CulturePage.tsx').then((m) => ({ default: m.CulturePage })),
+)
 
 export function App() {
   return (
@@ -31,6 +34,7 @@ export function App() {
           >
             <Route index element={<HomePage />} />
             <Route path="about" element={<AboutPage />} />
+            <Route path=":pattern/culture" element={<CulturePage />} />
             <Route path=":pattern" element={<EditorPage />} />
           </Route>
 

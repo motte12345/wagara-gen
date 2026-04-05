@@ -11,6 +11,8 @@ export const en: Translations = {
     footer: {
       about: 'About Wagara',
       copyright: '© 2026 Japanese Pattern Generator',
+      relatedTools: 'Related Tools',
+      colorConv: 'Japanese Color Converter',
     },
     langSwitch: '日本語',
   },
@@ -35,6 +37,9 @@ export const en: Translations = {
     preview: 'Preview',
     pngSize: 'PNG Size',
     reset: 'Reset',
+    share: 'Share',
+    shareTwitter: 'Share on X',
+    sharePinterest: 'Pin it',
   },
   about: {
     heading: 'About Wagara',
@@ -53,6 +58,11 @@ export const en: Translations = {
     history: 'History',
     symbolism: 'Symbolism',
     modernUse: 'Modern Use',
+    readMore: 'Learn about the history and meaning →',
+    backToEditor: '← Back to Editor',
+    shopTitle: 'Shop Products with This Pattern',
+    shopAmazon: 'Search on Amazon',
+    editPattern: 'Customize this pattern →',
   },
   patterns: {
     ichimatsu: {

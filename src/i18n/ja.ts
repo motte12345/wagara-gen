@@ -11,6 +11,8 @@ export const ja: Translations = {
     footer: {
       about: '和柄について',
       copyright: '© 2026 和柄ジェネレーター',
+      relatedTools: '関連ツール',
+      colorConv: '和色変換ツール',
     },
     langSwitch: 'English',
   },
@@ -35,6 +37,9 @@ export const ja: Translations = {
     preview: 'プレビュー',
     pngSize: 'PNGサイズ',
     reset: 'リセット',
+    share: 'シェア',
+    shareTwitter: 'Xでシェア',
+    sharePinterest: 'Pinterestにピン',
   },
   about: {
     heading: '和柄について',
@@ -53,6 +58,11 @@ export const ja: Translations = {
     history: '歴史',
     symbolism: '象徴',
     modernUse: '現代での使用',
+    readMore: 'この紋様の歴史と意味を知る →',
+    backToEditor: '← エディターに戻る',
+    shopTitle: 'この紋様の商品を探す',
+    shopAmazon: 'Amazonで探す',
+    editPattern: 'この紋様をカスタマイズ →',
   },
   patterns: {
     ichimatsu: {

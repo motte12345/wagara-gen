@@ -55,6 +55,12 @@ export function Layout() {
       </main>
 
       <footer className="site-footer">
+        <div className="footer-links">
+          <span>{t.common.footer.relatedTools}:</span>
+          <a href="https://color-conv.pages.dev" target="_blank" rel="noopener noreferrer">
+            {t.common.footer.colorConv}
+          </a>
+        </div>
         <p>{t.common.footer.copyright}</p>
       </footer>
     </>
