@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <!-- Home -->
   <url>
     <loc>https://wagara-gen.pages.dev/en/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/" />
@@ -16,8 +15,6 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Patterns -->
   <url>
     <loc>https://wagara-gen.pages.dev/en/ichimatsu</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/ichimatsu" />
@@ -214,8 +211,118 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- About -->
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/fundou</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/fundou" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/fundou" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/fundou</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/fundou" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/fundou" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/kouji</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kouji" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kouji" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/kouji</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kouji" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kouji" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/juuji</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/juuji" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/juuji" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/juuji</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/juuji" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/juuji" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/matsukawa</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/matsukawa" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/matsukawa" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/matsukawa</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/matsukawa" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/matsukawa" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/hishiseigaiha</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/hishiseigaiha" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/hishiseigaiha" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/hishiseigaiha</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/hishiseigaiha" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/hishiseigaiha" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/chidoritsunagi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/chidoritsunagi" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidoritsunagi" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/chidoritsunagi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/chidoritsunagi" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidoritsunagi" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/nawame</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/nawame" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/nawame" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/nawame</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/nawame" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/nawame" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/en/kazaguruma</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kazaguruma" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kazaguruma" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wagara-gen.pages.dev/ja/kazaguruma</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kazaguruma" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kazaguruma" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://wagara-gen.pages.dev/en/about</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/about" />
