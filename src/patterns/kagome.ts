@@ -13,6 +13,7 @@ function generate(params: PatternParams): string {
 
 export const kagome: PatternDefinition = {
   id: 'kagome',
+  category: 'geometric',
   generate,
   defaultParams: {
     color1: '#6b5b3d',

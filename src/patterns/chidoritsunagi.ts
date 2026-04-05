@@ -13,6 +13,7 @@ function generate(params: PatternParams): string {
 
 export const chidoritsunagi: PatternDefinition = {
   id: 'chidoritsunagi',
+  category: 'textile',
   generate,
   defaultParams: {
     color1: '#808080',

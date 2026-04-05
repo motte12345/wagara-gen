@@ -13,6 +13,7 @@ function generate(params: PatternParams): string {
 
 export const kazaguruma: PatternDefinition = {
   id: 'kazaguruma',
+  category: 'geometric',
   generate,
   defaultParams: {
     color1: '#808080',

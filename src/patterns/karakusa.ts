@@ -56,6 +56,7 @@ function generate(params: PatternParams): string {
 
 export const karakusa: PatternDefinition = {
   id: 'karakusa',
+  category: 'nature',
   generate,
   defaultParams: {
     color1: '#2d6b4e',

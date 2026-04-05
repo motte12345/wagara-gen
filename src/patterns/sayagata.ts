@@ -35,6 +35,7 @@ function generate(params: PatternParams): string {
 
 export const sayagata: PatternDefinition = {
   id: 'sayagata',
+  category: 'geometric',
   generate,
   defaultParams: {
     color1: '#ffffff',

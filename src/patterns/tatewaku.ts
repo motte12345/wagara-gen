@@ -27,6 +27,7 @@ function generate(params: PatternParams): string {
 
 export const tatewaku: PatternDefinition = {
   id: 'tatewaku',
+  category: 'textile',
   generate,
   defaultParams: {
     color1: '#7b5c8d',

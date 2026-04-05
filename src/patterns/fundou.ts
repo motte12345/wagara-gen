@@ -13,6 +13,7 @@ function generate(params: PatternParams): string {
 
 export const fundou: PatternDefinition = {
   id: 'fundou',
+  category: 'textile',
   generate,
   defaultParams: {
     color1: '#808080',

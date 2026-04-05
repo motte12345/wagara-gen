@@ -13,6 +13,7 @@ function generate(params: PatternParams): string {
 
 export const matsukawa: PatternDefinition = {
   id: 'matsukawa',
+  category: 'nature',
   generate,
   defaultParams: {
     color1: '#808080',

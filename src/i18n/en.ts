@@ -40,6 +40,14 @@ export const en: Translations = {
     heading: 'About Wagara',
     content: 'Wagara (和柄) are traditional Japanese patterns that have been used for centuries in textiles, ceramics, and architecture. Each pattern carries symbolic meaning rooted in Japanese culture and nature.',
   },
+  gallery: {
+    search: 'Search patterns...',
+    all: 'All',
+    geometric: 'Geometric',
+    nature: 'Nature',
+    textile: 'Textile',
+    noResults: 'No patterns found.',
+  },
   culture: {
     origin: 'Origin',
     history: 'History',

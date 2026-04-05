@@ -13,6 +13,7 @@ function generate(params: PatternParams): string {
 
 export const uroko: PatternDefinition = {
   id: 'uroko',
+  category: 'geometric',
   generate,
   defaultParams: {
     color1: '#6b5b73',

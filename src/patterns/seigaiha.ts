@@ -39,6 +39,7 @@ function generate(params: PatternParams): string {
 
 export const seigaiha: PatternDefinition = {
   id: 'seigaiha',
+  category: 'nature',
   generate,
   defaultParams: {
     color1: '#808080',

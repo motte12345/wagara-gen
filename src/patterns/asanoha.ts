@@ -29,6 +29,7 @@ function generate(params: PatternParams): string {
 
 export const asanoha: PatternDefinition = {
   id: 'asanoha',
+  category: 'nature',
   generate,
   defaultParams: {
     color1: '#808080',

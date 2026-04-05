@@ -38,6 +38,7 @@ function generate(params: PatternParams): string {
 
 export const sakura: PatternDefinition = {
   id: 'sakura',
+  category: 'nature',
   generate,
   defaultParams: {
     color1: '#d4879c',

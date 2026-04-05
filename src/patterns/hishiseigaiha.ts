@@ -30,6 +30,7 @@ function generate(params: PatternParams): string {
 
 export const hishiseigaiha: PatternDefinition = {
   id: 'hishiseigaiha',
+  category: 'geometric',
   generate,
   defaultParams: {
     color1: '#808080',

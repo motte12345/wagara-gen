@@ -42,6 +42,14 @@ export interface Translations {
     pngSize: string
     reset: string
   }
+  gallery: {
+    search: string
+    all: string
+    geometric: string
+    nature: string
+    textile: string
+    noResults: string
+  }
   about: {
     heading: string
     content: string

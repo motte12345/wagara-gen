@@ -17,6 +17,7 @@ function generate(params: PatternParams): string {
 
 export const koushi: PatternDefinition = {
   id: 'koushi',
+  category: 'geometric',
   generate,
   defaultParams: {
     color1: '#5d4e37',

@@ -21,6 +21,7 @@ function generate(params: PatternParams): string {
 
 export const shippou: PatternDefinition = {
   id: 'shippou',
+  category: 'textile',
   generate,
   defaultParams: {
     color1: '#8b6b3d',

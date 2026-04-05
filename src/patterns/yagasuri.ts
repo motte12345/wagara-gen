@@ -26,6 +26,7 @@ function generate(params: PatternParams): string {
 
 export const yagasuri: PatternDefinition = {
   id: 'yagasuri',
+  category: 'textile',
   generate,
   defaultParams: {
     color1: '#808080',

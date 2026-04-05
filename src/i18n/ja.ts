@@ -40,6 +40,14 @@ export const ja: Translations = {
     heading: '和柄について',
     content: '和柄（わがら）は、日本の伝統的な紋様です。何世紀にもわたり、織物、陶磁器、建築などに使われてきました。それぞれの紋様には、日本の文化や自然に根ざした象徴的な意味があります。',
   },
+  gallery: {
+    search: '紋様を検索...',
+    all: 'すべて',
+    geometric: '幾何学',
+    nature: '自然',
+    textile: '織物',
+    noResults: '紋様が見つかりません。',
+  },
   culture: {
     origin: '由来',
     history: '歴史',

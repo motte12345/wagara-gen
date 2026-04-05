@@ -14,6 +14,7 @@ function generate(params: PatternParams): string {
 
 export const chidori: PatternDefinition = {
   id: 'chidori',
+  category: 'textile',
   generate,
   defaultParams: {
     color1: '#808080',

@@ -11,6 +11,7 @@ function generate(params: PatternParams): string {
 
 export const ichimatsu: PatternDefinition = {
   id: 'ichimatsu',
+  category: 'geometric',
   generate,
   defaultParams: {
     color1: '#2d4a3e',

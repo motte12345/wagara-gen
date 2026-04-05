@@ -8,8 +8,11 @@ export interface PatternParams {
   readonly opacity: number
 }
 
+export type PatternCategory = 'geometric' | 'nature' | 'textile'
+
 export interface PatternDefinition {
   readonly id: string
+  readonly category: PatternCategory
   readonly generate: (params: PatternParams) => string
   readonly defaultParams: PatternParams
   readonly hasAccentColor: boolean

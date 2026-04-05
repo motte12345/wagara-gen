@@ -27,6 +27,7 @@ function generate(params: PatternParams): string {
 
 export const nami: PatternDefinition = {
   id: 'nami',
+  category: 'nature',
   generate,
   defaultParams: {
     color1: '#2b5797',

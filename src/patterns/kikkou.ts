@@ -47,6 +47,7 @@ function generate(params: PatternParams): string {
 
 export const kikkou: PatternDefinition = {
   id: 'kikkou',
+  category: 'textile',
   generate,
   defaultParams: {
     color1: '#2d6b4e',

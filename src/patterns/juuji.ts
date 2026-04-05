@@ -13,6 +13,7 @@ function generate(params: PatternParams): string {
 
 export const juuji: PatternDefinition = {
   id: 'juuji',
+  category: 'geometric',
   generate,
   defaultParams: {
     color1: '#333333',

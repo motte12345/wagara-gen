@@ -133,6 +133,64 @@ a:hover {
   font-size: 1.1rem;
 }
 
+.gallery-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.gallery-filters {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.filter-btn:hover {
+  background: var(--border);
+}
+
+.filter-btn--active {
+  background: var(--text);
+  color: var(--bg);
+  border-color: var(--text);
+}
+
+.gallery-search {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.85rem;
+  flex: 1;
+  min-width: 180px;
+  max-width: 300px;
+}
+
+.gallery-search::placeholder {
+  color: var(--text-muted, #999);
+}
+
+.gallery-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-muted, #999);
+}
+
 .pattern-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

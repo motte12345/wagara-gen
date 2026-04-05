@@ -13,6 +13,7 @@ function generate(params: PatternParams): string {
 
 export const nawame: PatternDefinition = {
   id: 'nawame',
+  category: 'textile',
   generate,
   defaultParams: {
     color1: '#808080',
