@@ -1,47 +1,18 @@
 # PLAN.md — wagara-gen
 
 ## Phase 1（初期リリース: 12紋様）
-
-### Step 1: プロジェクト基盤
-- Vite + React 19 + TypeScript
-- React Router、ESLint、Vitest
-- i18n（英語メイン + 日本語）
-- Layout
-- public 静的ファイル
-
-### Step 2: パターンエンジン
-- PatternParams 型定義
-- 12紋様のSVG生成関数（純粋関数）
-- SVG → PNG 変換（Canvas API）
-- CSS コード生成
-- ユニットテスト（各紋様が有効なSVGを返すか）
-
-### Step 3: パターンエディターUI
-- カスタマイズフォーム（色、スケール、線幅、回転、透明度）
-- リアルタイムプレビュー
-- ダウンロード（SVG / PNG / CSS）
-- コピー機能
-
-### Step 4: トップページ・紋様一覧
-- 12紋様のギャラリー表示
-- 各紋様の文化的解説コンテンツ
-
-### Step 5: 公開準備
-- OGP画像生成
-- AdSense + アフィリエイト
-- SEO（メタタグ、JSON-LD）
-- sitemap.xml, GA4
-- GitHub → Cloudflare Pages
+- プロジェクト基盤、パターンエンジン、エディターUI、ギャラリー、公開準備
 
 ## Phase 2（追加紋様 + 品質改善）
-- 追加紋様（8種）: 分銅繋ぎ、工字繋ぎ、十字繋ぎ、松皮菱、菱青海波、千鳥繋ぎ、縄目縞、風車
-- 既存パターン改修（6種をfillベースに書き直し）
-- レビュー指摘対応（二重描画修正、usesStrokeフラグ、セキュリティ改善等）
+- 追加8種、既存6種のfillベース書き直し、レビュー指摘12件対応
 
-## Phase 3
-- ギャラリーページ（フィルター・検索）
-- color-conv和色辞典との連携
-- sitemap.xml更新（22パターン対応）
+## Phase 3（ギャラリー強化 + 収益化）
+- カテゴリフィルター・検索、文化ページ独立化、Amazonアフィリエイト、SNSシェア、相互リンク
 
 ## 現在のフェーズ
-**Phase 2 — 完了（2026-04-04）** → Phase 3 未着手
+**Phase 3 — 完了（2026-04-07）**
+
+## 成果
+- 22紋様、170テスト、92 URL sitemap
+- EN/JA 完全対応、Cloudflare Pages 自動デプロイ
+- AdSense + Amazon affiliate + SNS share
