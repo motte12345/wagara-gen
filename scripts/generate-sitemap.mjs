@@ -6,7 +6,7 @@ import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const SITE_URL = 'https://wagara-gen.pages.dev'
+const SITE_URL = 'https://wagara.simtool.dev'
 const LANGS = ['en', 'ja']
 
 const PATTERNS = [

@@ -2,646 +2,646 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wagara-gen.pages.dev/en/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/" />
+    <loc>https://wagara.simtool.dev/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/" />
+    <loc>https://wagara.simtool.dev/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/ichimatsu</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/ichimatsu" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/ichimatsu" />
+    <loc>https://wagara.simtool.dev/en/ichimatsu</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/ichimatsu" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/ichimatsu" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/ichimatsu</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/ichimatsu" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/ichimatsu" />
+    <loc>https://wagara.simtool.dev/ja/ichimatsu</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/ichimatsu" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/ichimatsu" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/ichimatsu/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/ichimatsu/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/ichimatsu/culture" />
+    <loc>https://wagara.simtool.dev/en/ichimatsu/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/ichimatsu/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/ichimatsu/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/ichimatsu/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/ichimatsu/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/ichimatsu/culture" />
+    <loc>https://wagara.simtool.dev/ja/ichimatsu/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/ichimatsu/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/ichimatsu/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/asanoha</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/asanoha" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/asanoha" />
+    <loc>https://wagara.simtool.dev/en/asanoha</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/asanoha" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/asanoha" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/asanoha</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/asanoha" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/asanoha" />
+    <loc>https://wagara.simtool.dev/ja/asanoha</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/asanoha" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/asanoha" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/asanoha/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/asanoha/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/asanoha/culture" />
+    <loc>https://wagara.simtool.dev/en/asanoha/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/asanoha/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/asanoha/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/asanoha/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/asanoha/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/asanoha/culture" />
+    <loc>https://wagara.simtool.dev/ja/asanoha/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/asanoha/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/asanoha/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/seigaiha</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/seigaiha" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/seigaiha" />
+    <loc>https://wagara.simtool.dev/en/seigaiha</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/seigaiha" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/seigaiha" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/seigaiha</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/seigaiha" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/seigaiha" />
+    <loc>https://wagara.simtool.dev/ja/seigaiha</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/seigaiha" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/seigaiha" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/seigaiha/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/seigaiha/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/seigaiha/culture" />
+    <loc>https://wagara.simtool.dev/en/seigaiha/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/seigaiha/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/seigaiha/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/seigaiha/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/seigaiha/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/seigaiha/culture" />
+    <loc>https://wagara.simtool.dev/ja/seigaiha/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/seigaiha/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/seigaiha/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/uroko</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/uroko" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/uroko" />
+    <loc>https://wagara.simtool.dev/en/uroko</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/uroko" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/uroko" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/uroko</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/uroko" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/uroko" />
+    <loc>https://wagara.simtool.dev/ja/uroko</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/uroko" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/uroko" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/uroko/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/uroko/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/uroko/culture" />
+    <loc>https://wagara.simtool.dev/en/uroko/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/uroko/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/uroko/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/uroko/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/uroko/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/uroko/culture" />
+    <loc>https://wagara.simtool.dev/ja/uroko/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/uroko/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/uroko/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/shippou</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/shippou" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/shippou" />
+    <loc>https://wagara.simtool.dev/en/shippou</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/shippou" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/shippou" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/shippou</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/shippou" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/shippou" />
+    <loc>https://wagara.simtool.dev/ja/shippou</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/shippou" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/shippou" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/shippou/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/shippou/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/shippou/culture" />
+    <loc>https://wagara.simtool.dev/en/shippou/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/shippou/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/shippou/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/shippou/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/shippou/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/shippou/culture" />
+    <loc>https://wagara.simtool.dev/ja/shippou/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/shippou/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/shippou/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/kikkou</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kikkou" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kikkou" />
+    <loc>https://wagara.simtool.dev/en/kikkou</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/kikkou" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/kikkou" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/kikkou</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kikkou" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kikkou" />
+    <loc>https://wagara.simtool.dev/ja/kikkou</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/kikkou" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/kikkou" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/kikkou/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kikkou/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kikkou/culture" />
+    <loc>https://wagara.simtool.dev/en/kikkou/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/kikkou/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/kikkou/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/kikkou/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kikkou/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kikkou/culture" />
+    <loc>https://wagara.simtool.dev/ja/kikkou/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/kikkou/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/kikkou/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/yagasuri</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/yagasuri" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/yagasuri" />
+    <loc>https://wagara.simtool.dev/en/yagasuri</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/yagasuri" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/yagasuri" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/yagasuri</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/yagasuri" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/yagasuri" />
+    <loc>https://wagara.simtool.dev/ja/yagasuri</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/yagasuri" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/yagasuri" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/yagasuri/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/yagasuri/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/yagasuri/culture" />
+    <loc>https://wagara.simtool.dev/en/yagasuri/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/yagasuri/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/yagasuri/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/yagasuri/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/yagasuri/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/yagasuri/culture" />
+    <loc>https://wagara.simtool.dev/ja/yagasuri/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/yagasuri/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/yagasuri/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/chidori</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/chidori" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidori" />
+    <loc>https://wagara.simtool.dev/en/chidori</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/chidori" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/chidori" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/chidori</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/chidori" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidori" />
+    <loc>https://wagara.simtool.dev/ja/chidori</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/chidori" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/chidori" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/chidori/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/chidori/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidori/culture" />
+    <loc>https://wagara.simtool.dev/en/chidori/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/chidori/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/chidori/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/chidori/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/chidori/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidori/culture" />
+    <loc>https://wagara.simtool.dev/ja/chidori/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/chidori/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/chidori/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/koushi</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/koushi" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/koushi" />
+    <loc>https://wagara.simtool.dev/en/koushi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/koushi" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/koushi" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/koushi</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/koushi" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/koushi" />
+    <loc>https://wagara.simtool.dev/ja/koushi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/koushi" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/koushi" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/koushi/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/koushi/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/koushi/culture" />
+    <loc>https://wagara.simtool.dev/en/koushi/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/koushi/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/koushi/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/koushi/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/koushi/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/koushi/culture" />
+    <loc>https://wagara.simtool.dev/ja/koushi/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/koushi/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/koushi/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/sayagata</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/sayagata" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/sayagata" />
+    <loc>https://wagara.simtool.dev/en/sayagata</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/sayagata" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/sayagata" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/sayagata</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/sayagata" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/sayagata" />
+    <loc>https://wagara.simtool.dev/ja/sayagata</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/sayagata" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/sayagata" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/sayagata/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/sayagata/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/sayagata/culture" />
+    <loc>https://wagara.simtool.dev/en/sayagata/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/sayagata/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/sayagata/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/sayagata/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/sayagata/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/sayagata/culture" />
+    <loc>https://wagara.simtool.dev/ja/sayagata/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/sayagata/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/sayagata/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/kagome</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kagome" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kagome" />
+    <loc>https://wagara.simtool.dev/en/kagome</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/kagome" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/kagome" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/kagome</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kagome" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kagome" />
+    <loc>https://wagara.simtool.dev/ja/kagome</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/kagome" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/kagome" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/kagome/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kagome/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kagome/culture" />
+    <loc>https://wagara.simtool.dev/en/kagome/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/kagome/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/kagome/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/kagome/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kagome/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kagome/culture" />
+    <loc>https://wagara.simtool.dev/ja/kagome/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/kagome/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/kagome/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/tatewaku</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/tatewaku" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/tatewaku" />
+    <loc>https://wagara.simtool.dev/en/tatewaku</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/tatewaku" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/tatewaku" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/tatewaku</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/tatewaku" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/tatewaku" />
+    <loc>https://wagara.simtool.dev/ja/tatewaku</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/tatewaku" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/tatewaku" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/tatewaku/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/tatewaku/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/tatewaku/culture" />
+    <loc>https://wagara.simtool.dev/en/tatewaku/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/tatewaku/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/tatewaku/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/tatewaku/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/tatewaku/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/tatewaku/culture" />
+    <loc>https://wagara.simtool.dev/ja/tatewaku/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/tatewaku/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/tatewaku/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/sakura</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/sakura" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/sakura" />
+    <loc>https://wagara.simtool.dev/en/sakura</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/sakura" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/sakura" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/sakura</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/sakura" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/sakura" />
+    <loc>https://wagara.simtool.dev/ja/sakura</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/sakura" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/sakura" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/sakura/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/sakura/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/sakura/culture" />
+    <loc>https://wagara.simtool.dev/en/sakura/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/sakura/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/sakura/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/sakura/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/sakura/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/sakura/culture" />
+    <loc>https://wagara.simtool.dev/ja/sakura/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/sakura/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/sakura/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/nami</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/nami" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/nami" />
+    <loc>https://wagara.simtool.dev/en/nami</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/nami" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/nami" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/nami</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/nami" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/nami" />
+    <loc>https://wagara.simtool.dev/ja/nami</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/nami" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/nami" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/nami/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/nami/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/nami/culture" />
+    <loc>https://wagara.simtool.dev/en/nami/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/nami/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/nami/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/nami/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/nami/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/nami/culture" />
+    <loc>https://wagara.simtool.dev/ja/nami/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/nami/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/nami/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/fundou</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/fundou" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/fundou" />
+    <loc>https://wagara.simtool.dev/en/fundou</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/fundou" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/fundou" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/fundou</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/fundou" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/fundou" />
+    <loc>https://wagara.simtool.dev/ja/fundou</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/fundou" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/fundou" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/fundou/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/fundou/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/fundou/culture" />
+    <loc>https://wagara.simtool.dev/en/fundou/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/fundou/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/fundou/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/fundou/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/fundou/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/fundou/culture" />
+    <loc>https://wagara.simtool.dev/ja/fundou/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/fundou/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/fundou/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/kouji</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kouji" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kouji" />
+    <loc>https://wagara.simtool.dev/en/kouji</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/kouji" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/kouji" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/kouji</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kouji" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kouji" />
+    <loc>https://wagara.simtool.dev/ja/kouji</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/kouji" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/kouji" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/kouji/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kouji/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kouji/culture" />
+    <loc>https://wagara.simtool.dev/en/kouji/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/kouji/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/kouji/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/kouji/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kouji/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kouji/culture" />
+    <loc>https://wagara.simtool.dev/ja/kouji/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/kouji/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/kouji/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/juuji</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/juuji" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/juuji" />
+    <loc>https://wagara.simtool.dev/en/juuji</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/juuji" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/juuji" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/juuji</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/juuji" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/juuji" />
+    <loc>https://wagara.simtool.dev/ja/juuji</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/juuji" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/juuji" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/juuji/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/juuji/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/juuji/culture" />
+    <loc>https://wagara.simtool.dev/en/juuji/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/juuji/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/juuji/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/juuji/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/juuji/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/juuji/culture" />
+    <loc>https://wagara.simtool.dev/ja/juuji/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/juuji/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/juuji/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/matsukawa</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/matsukawa" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/matsukawa" />
+    <loc>https://wagara.simtool.dev/en/matsukawa</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/matsukawa" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/matsukawa" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/matsukawa</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/matsukawa" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/matsukawa" />
+    <loc>https://wagara.simtool.dev/ja/matsukawa</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/matsukawa" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/matsukawa" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/matsukawa/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/matsukawa/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/matsukawa/culture" />
+    <loc>https://wagara.simtool.dev/en/matsukawa/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/matsukawa/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/matsukawa/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/matsukawa/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/matsukawa/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/matsukawa/culture" />
+    <loc>https://wagara.simtool.dev/ja/matsukawa/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/matsukawa/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/matsukawa/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/hishiseigaiha</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/hishiseigaiha" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/hishiseigaiha" />
+    <loc>https://wagara.simtool.dev/en/hishiseigaiha</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/hishiseigaiha" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/hishiseigaiha" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/hishiseigaiha</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/hishiseigaiha" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/hishiseigaiha" />
+    <loc>https://wagara.simtool.dev/ja/hishiseigaiha</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/hishiseigaiha" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/hishiseigaiha" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/hishiseigaiha/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/hishiseigaiha/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/hishiseigaiha/culture" />
+    <loc>https://wagara.simtool.dev/en/hishiseigaiha/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/hishiseigaiha/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/hishiseigaiha/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/hishiseigaiha/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/hishiseigaiha/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/hishiseigaiha/culture" />
+    <loc>https://wagara.simtool.dev/ja/hishiseigaiha/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/hishiseigaiha/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/hishiseigaiha/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/chidoritsunagi</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/chidoritsunagi" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidoritsunagi" />
+    <loc>https://wagara.simtool.dev/en/chidoritsunagi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/chidoritsunagi" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/chidoritsunagi" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/chidoritsunagi</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/chidoritsunagi" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidoritsunagi" />
+    <loc>https://wagara.simtool.dev/ja/chidoritsunagi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/chidoritsunagi" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/chidoritsunagi" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/chidoritsunagi/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/chidoritsunagi/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidoritsunagi/culture" />
+    <loc>https://wagara.simtool.dev/en/chidoritsunagi/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/chidoritsunagi/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/chidoritsunagi/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/chidoritsunagi/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/chidoritsunagi/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/chidoritsunagi/culture" />
+    <loc>https://wagara.simtool.dev/ja/chidoritsunagi/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/chidoritsunagi/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/chidoritsunagi/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/nawame</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/nawame" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/nawame" />
+    <loc>https://wagara.simtool.dev/en/nawame</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/nawame" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/nawame" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/nawame</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/nawame" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/nawame" />
+    <loc>https://wagara.simtool.dev/ja/nawame</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/nawame" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/nawame" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/nawame/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/nawame/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/nawame/culture" />
+    <loc>https://wagara.simtool.dev/en/nawame/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/nawame/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/nawame/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/nawame/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/nawame/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/nawame/culture" />
+    <loc>https://wagara.simtool.dev/ja/nawame/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/nawame/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/nawame/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/kazaguruma</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kazaguruma" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kazaguruma" />
+    <loc>https://wagara.simtool.dev/en/kazaguruma</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/kazaguruma" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/kazaguruma" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/kazaguruma</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kazaguruma" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kazaguruma" />
+    <loc>https://wagara.simtool.dev/ja/kazaguruma</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/kazaguruma" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/kazaguruma" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/kazaguruma/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kazaguruma/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kazaguruma/culture" />
+    <loc>https://wagara.simtool.dev/en/kazaguruma/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/kazaguruma/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/kazaguruma/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/kazaguruma/culture</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/kazaguruma/culture" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/kazaguruma/culture" />
+    <loc>https://wagara.simtool.dev/ja/kazaguruma/culture</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/kazaguruma/culture" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/kazaguruma/culture" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/en/about</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/about" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/about" />
+    <loc>https://wagara.simtool.dev/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/about" />
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://wagara-gen.pages.dev/ja/about</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wagara-gen.pages.dev/en/about" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara-gen.pages.dev/ja/about" />
+    <loc>https://wagara.simtool.dev/ja/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wagara.simtool.dev/en/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wagara.simtool.dev/ja/about" />
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>

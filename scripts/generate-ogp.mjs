@@ -67,7 +67,7 @@ const svg = `
   <!-- Footer bar -->
   <rect x="0" y="560" width="1200" height="70" fill="#000000" opacity="0.3" />
   <text x="600" y="604" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="20" fill="#ffffff" opacity="0.7">
-    wagara-gen.pages.dev
+    wagara.simtool.dev
   </text>
 </svg>
 `
